@@ -3,7 +3,7 @@
 define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
 define('CORE_DIR', ROOT_DIR .'core/');
 define('CONF_DIR', ROOT_DIR .'conf/');
-define('WWW_DIR', ROOT_DIR .'/');
+define('WWW_DIR', ROOT_DIR .'');
 define('CONTENT_DIR', WWW_DIR .'content/');
 define('THEMES_DIR', WWW_DIR .'themes/');
 define('CACHE_DIR', WWW_DIR .'cache/');

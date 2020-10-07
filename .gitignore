@@ -1,11 +1,11 @@
-www/cache/*
-www/content/*
+cache/*
+content/*
 
-composer.lock
-composer.phar
-vendor/twig/twig/doc/*
-vendor/twig/twig/ext/*
-vendor/twig/twig/test/*
+!composer.lock
+!composer.phar
+!vendor/twig/twig/doc/*
+!vendor/twig/twig/ext/*
+!vendor/twig/twig/test/*
 
-# gh-pages
+#gh-pages
 _site

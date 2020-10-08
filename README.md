@@ -1,7 +1,7 @@
 Picturo
 =======
 
-## About the Application:-
+## About the Application
 Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for photos.
 
 ## Demo
@@ -13,8 +13,7 @@ You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the de
 To run Picturo you will need ``PHP 5.2.4+`` and ``GD Library`` on your server. If you’re running Apache you will also require ``mod_rewrite`` to be enabled.
 
 ## Installation
-First download Picturo and extract it on your server.
-Change ownership and permission of the cache folder to the user of your web server ``set permissions to 777`` so you’ll be able to delete cache if needed.
+First download Picturo and extract it on your server. Change ownership and permission of the cache folder to the user of your web server ``set permissions to 777`` so you’ll be able to delete cache if needed.
 
 ### Upload your folders of pictures into content.
 Customize settings by editing config.php in the root folder of Picturo. To override a setting simply uncomment it in config.php and set your custom value.
@@ -31,12 +30,10 @@ Your photos must be stored in content folder, if you want to add a gallery you j
 Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
-Picturo supports themes with Twig as templating engine they are located in the themes folder.
-All themes must include two files : <br/>
+Picturo supports themes with Twig as templating engine they are located in the themes folder. All themes must include two files : <br/>
 ``gallery.html`` <br/>
 ``detail.html`` <br/>
-If you want to keep your galleries private, you will need a third file “login.html”.
-Each file will have a basic set of variable, plus specific variable.
+If you want to keep your galleries private, you will need a third file “login.html”. Each file will have a basic set of variable, plus specific variable.
 
 Default variables, available for all files : <br/>
 ``{{ base_url }} : The URL of your site`` <br/>

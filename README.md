@@ -12,18 +12,18 @@ You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the de
 </b>
 
 ## Requirements
-To run Picturo you will need ``PHP 5.2.4+`` and ``GD Library`` on your server. If you’re running Apache you will also require ``mod_rewrite`` to be enabled.
+To run Picturo you will need <b>``PHP 5.2.4+``</b> and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.
 
 ## Installation
-First download Picturo and extract it on your server. Change ownership and permission of the cache folder to the user of your web server ``set permissions to 777`` so you’ll be able to delete cache if needed.
+First download Picturo and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
 
 ### Upload your folders of pictures into content.
 Customize settings by editing config.php in the root folder of Picturo. To override a setting simply uncomment it in config.php and set your custom value.
 
 ### Privatize your site
-Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. ``By default, there is an admin user with the password “admin” in the configuration file``. Just uncomment the two following lines to enable private galleries : <br/>
-``$config['private'] = true;`` <br/>
-``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';`` <br/>
+Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
+<b>``$config['private'] = true;`` <br/>
+``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';`` <br/></b>
 Passwords are SHA-1 strings, you can generate your passwords online here.
 
 ### Add galleries
@@ -32,37 +32,44 @@ Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
 Picturo supports themes with Twig as templating engine they are located in the themes folder. All themes must include two files : <br/>
-``gallery.html`` <br/>
-``detail.html`` <br/>
-If you want to keep your galleries private, you will need a third file “login.html”. Each file will have a basic set of variable, plus specific variable.
+<b>``gallery.html`` <br/>
+``detail.html`` <br/></b>
+If you want to keep your galleries private, you will need a third file <b>“login.html”</b>. Each file will have a basic set of variable, plus specific variable.
 
 Default variables, available for all files : <br/>
+<b>
 ``{{ base_url }} : The URL of your site`` <br/>
 ``{{ theme_url }} : The URL of your active theme`` <br/>
 ``{{ site_title }} : The title of your website`` <br/>
-``{{ username }} : The logged in username (if you use private gallery)`` <br/>
+``{{ username }} : The logged in username (if you use private gallery)`` <br/></b>
 
 Variables for gallery.html, which will list all folders and pictures : <br/>
+<b>
 ``{{ url }} : The current url`` <br/>
 ``{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name`` <br/>
 ``{{ folders }} : An array containing folder objects for current url. Each folder has 3 attributes (url, thumbnail_url, name)`` <br/>
 ``{{ images }} : An array containing image objects for current url. Each image has 3 attributes (url, thumbnail_url, name)`` <br/>
 ``{{ page_count }} : The total count of pages for current url.`` <br/>
 ``{{ current_page }} : The current page`` <br/>
+</b>
 
 Variables for detail.html, which will display one picture : <br/>
+<b>
 ``{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name`` <br/>
 ``{{ image_url }} : The URL of the current image`` <br/>
 ``{{ image_previous_url }} : The URL of the previous image`` <br/>
 ``{{ image_next_url }} : The URL of the next image`` <br/>
+</b>
 
 Variables for login.html, which will display the login form : <br/>
+<b>
 ``{{ login_error }} : Tell if login attempt was valid or not`` <br/>
 ``{{ username }} : The username entered in login form input`` <br/>
+</b>
 
 ### Thumbnail generation
 For easy thumbnail generation in your theme, there is an helper function available in your views. You should use the function picturo_thumbnail in your views. For example, if you want to generate a squared 300px by 300px thumbnail, insert the following line in your view : <br/>
-``{% picturo_thumbnail(thumbnail_url, 300, 300) %}`` <br/>
+<b>``{% picturo_thumbnail(thumbnail_url, 300, 300) %}`` <br/></b>
 Thumbnail will be be automagically created in a folder matching the size of the thumbnail !
 
 ### Other themes

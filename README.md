@@ -9,7 +9,7 @@ You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the de
 <b>
 ``user : admin`` <br/>
 ``password : admin``
-<b>
+</b>
 
 ## Requirements
 To run Picturo you will need ``PHP 5.2.4+`` and ``GD Library`` on your server. If you’re running Apache you will also require ``mod_rewrite`` to be enabled.

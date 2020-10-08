@@ -7,7 +7,7 @@ Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery ru
 ## Demo
 You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the demo is private but you can login with the following credentials :
 
-``user : admin``
+``user : admin`` <br/>
 ``password : admin``
 
 ## Requirements
@@ -23,7 +23,7 @@ Customize settings by editing config.php in the root folder of Picturo. To overr
 ### Privatize your site
 Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. By default, there is an admin user with the password “admin” in the configuration file. Just uncomment the two following lines to enable private galleries :
 
-``$config['private'] = true;``
+``$config['private'] = true;`` 
 ``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';``
 Passwords are SHA-1 strings, you can generate your passwords online here.
 

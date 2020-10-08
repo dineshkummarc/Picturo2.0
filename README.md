@@ -93,3 +93,15 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Support JPEG (.jpeg, .jpg, .jpe, .jfif),
  - [ ] Support TGA (.tga, .vda, .vst, .icb),
  - [ ] Support DDS (.dds)
+ - [x] Better authentification method
+ - [x] Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
+ - [x] Add administrator status
+ - [x] Add multiple users
+ - [x] Add possibility to hide folders to users via administration. By default, a new folder is available for all users.
+ - [x] Administrator can manage pictures (rotate, cropped, cut, reduce, setWidth, setHeight). Modifications are made on thumbnails. Originals are not modified.
+ - [x] Add error view
+ - [x] Update theme (footer is always at the bottom of the page -not bottom of the screen- whatever the height of content)
+ - [x] Pictures (originals) can be download one by one by users
+ - [x] javascript preloader for big pictures
+ - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)
+ - [x] pictures and folders are sorting with natural case insensitive sort

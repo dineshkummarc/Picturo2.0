@@ -1,16 +1,16 @@
 Picturo
 ====
 
-Picturo is a stupidly simple, blazing fast, flat file photo gallery. 
-
+##About the Application
+Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery.
 [Documentation](http://jbleuzen.github.io/Picturo/) — [Demo](http://picturo.johanbleuzen.fr) (user : admin - pass : admin)
-
-If you have trouble with Picturo, please use the [Issue page](https://github.com/jbleuzen/Picturo/issues).
-
+If you have trouble with Picturo, please use the [Issue page](https://github.com/dineshkummarc/Picturo/issues).
 Picturo was inspired by [Pico](https://github.com/gilbitron/Pico).
 
-TODO : 
+##So Far Developers Credit:-
+1. Creator -> https://github.com/jbleuzen
+2. Modifications -> https://github.com/jerrywham
 
- * Responsive theme
- * Add settings
- * Support GIF, PNG
+##TODO : 
+ 1. Responsive theme
+ 2. Add settings

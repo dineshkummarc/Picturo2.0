@@ -27,5 +27,5 @@ $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_set
 $config['site_title'] = 'Picturo';
 $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
-$config['nbOfFolders'] = 7;
+$config['nbOfFolders'] = 8;
 ?>

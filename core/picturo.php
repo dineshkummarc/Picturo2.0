@@ -96,7 +96,7 @@ class Picturo {
           $tmp_array['name'] = basename($folder);
           if ($this->isFolderAllowedToDisplay($tmp_array['name']) ) {
           
-          $files = glob("$folder/*.{jpg,jpeg,JPG,JPEG}", GLOB_BRACE);
+          $files = glob("$folder/*.{jpg,jpeg,png,JPG,JPEG,PNG}", GLOB_BRACE);
           if (!empty($files)) {
               $tmp_array['images_count'] = count($files);
   
@@ -489,7 +489,7 @@ class Picturo {
           if( is_dir($file)){
             array_push($this->foldersPath, $file);
           }
-          if(is_file($file) && preg_match("/.jpg/i", $file)) {
+          if(is_file($file) && preg_match("/.jpg|.jpeg|.png/i", $file)) {
             array_push($this->imagesPath, $file);
           }
         }

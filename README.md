@@ -90,6 +90,6 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Support PNG (.png),
  - [ ] Support TIFF (.tiff, .tif),
  - [ ] Support BMP (.bmp, .dib, .rle),
- - [ ] Support JPEG (~.jpeg~, ~.jpg~, .jpe, .jfif),
+ - [x] Support JPEG (.jpeg, .jpg, .jpe, .jfif),
  - [ ] Support TGA (.tga, .vda, .vst, .icb),
  - [ ] Support DDS (.dds)

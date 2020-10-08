@@ -14,8 +14,10 @@ Picturo was inspired by [Pico](https://github.com/gilbitron/Pico).
 ##TODO : 
  1. Responsive theme
  2. Add settings -> Add Users, Manage Users
- 3. Support GIF, PNG,
- 4. Support TIFF (.tiff, .tif),
- 5. Support BMP (.bmp, .dib, .rle)
- 6. Support JPG formats (~.jpeg~, ~.jpg~, .jpe, .jfif)
- 7. Support TGA (.tga)
+ 3. Support GIF, 
+ 4. Support PNG,
+ 5. Support TIFF (.tiff, .tif),
+ 6. Support BMP (.bmp, .dib, .rle),
+ 7. Support JPG formats (~.jpeg~, ~.jpg~, .jpe, .jfif),
+ 8. Support TGA (.tga),
+ 9. Support DDS (.dds)

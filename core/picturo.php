@@ -489,7 +489,7 @@ class Picturo {
           if( is_dir($file)){
             array_push($this->foldersPath, $file);
           }
-          if(is_file($file) && preg_match("/.jpg|.jpeg|.png/i", $file)) {
+          if(is_file($file) && preg_match("/.jpg|.jpeg|.png|.gif/i", $file)) {
             array_push($this->imagesPath, $file);
           }
         }

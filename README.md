@@ -21,15 +21,13 @@ Change ownership and permission of the cache folder to the user of your web serv
 Customize settings by editing config.php in the root folder of Picturo. To override a setting simply uncomment it in config.php and set your custom value.
 
 ### Privatize your site
-Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. By default, there is an admin user with the password “admin” in the configuration file. Just uncomment the two following lines to enable private galleries :
-
+Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. ``By default, there is an admin user with the password “admin” in the configuration file``. Just uncomment the two following lines to enable private galleries : <br/>
 ``$config['private'] = true;`` <br/>
-``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';``
+``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';`` <br/>
 Passwords are SHA-1 strings, you can generate your passwords online here.
 
 ### Add galleries
 Your photos must be stored in content folder, if you want to add a gallery you just need to create a folder within your content folder.
-
 Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
@@ -39,7 +37,6 @@ All themes must include two files :
 ``gallery.html`` <br/>
 ``detail.html`` <br/>
 If you want to keep your galleries private, you will need a third file “login.html”.
-
 Each file will have a basic set of variable, plus specific variable.
 
 Default variables, available for all files :
@@ -67,19 +64,17 @@ Variables for login.html, which will display the login form :
 ``{{ login_error }} : Tell if login attempt was valid or not`` <br/>
 ``{{ username }} : The username entered in login form input`` <br/>
 
-Thumbnail generation
+### Thumbnail generation
 For easy thumbnail generation in your theme, there is an helper function available in your views.
 You should use the function picturo_thumbnail in your views.
 
 For example, if you want to generate a squared 300px by 300px thumbnail, insert the following line in your view :
-
 ``{% picturo_thumbnail(thumbnail_url, 300, 300) %}`` <br/>
 
 Thumbnail will be be automagically created in a folder matching the size of the thumbnail !
 
 ### Other themes
 I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use Twig template for easy theming.
-
 And please, show me your theme if you want to share it.
 
 ### Contribute

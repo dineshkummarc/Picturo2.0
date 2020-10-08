@@ -160,7 +160,7 @@ class Thumbnail {
     if($ext == "png") {
       $srcimg = imagecreatefrompng($src);
     }
-    // $srcimg = imagecreatefromjpeg($src);
+    // $srcimg = imagecreatefromjpeg($src); /* replaced with image type
     $src_w = imagesx($srcimg);
     $src_h = imagesy($srcimg);
     $src_ratio = $src_w/$src_h;
@@ -180,7 +180,13 @@ class Thumbnail {
     imagedestroy($newpic);
     imagedestroy($srcimg);
 
-    imagejpeg($final, $dest, 80); //again, assuming jpeg, 80% quality
+    // imagejpeg($final, $dest, 80); //again, assuming jpeg, 80% quality
+    if($ext == "jpg" || $ext == "jpeg") {
+      imagejpeg($final, $dest, 80); //again, assuming jpeg, 80% quality
+    }
+    if($ext == "png") {
+      imagepng($final, $dest, 0); //again, assuming jpeg, 80% quality
+    }
   }
 
 

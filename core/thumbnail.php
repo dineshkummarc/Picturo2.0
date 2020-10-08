@@ -160,6 +160,9 @@ class Thumbnail {
     if($ext == "png") {
       $srcimg = imagecreatefrompng($src);
     }
+    if($ext == "gif") {
+      $srcimg = imagecreatefromgif($src);
+    }
     // $srcimg = imagecreatefromjpeg($src); /* replaced with image type
     $src_w = imagesx($srcimg);
     $src_h = imagesy($srcimg);
@@ -185,7 +188,10 @@ class Thumbnail {
       imagejpeg($final, $dest, 80); //again, assuming jpeg, 80% quality
     }
     if($ext == "png") {
-      imagepng($final, $dest, 0); //again, assuming jpeg, 80% quality
+      imagepng($final, $dest, 0); //again, assuming png, 0% quality
+    }
+    if($ext == "gif") {
+      imagegif($final, $dest); //again, assuming gif, 100% quality
     }
   }
 

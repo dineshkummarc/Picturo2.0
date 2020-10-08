@@ -84,12 +84,12 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
 2. Modifications -> https://github.com/jerrywham
 
 ## TODO:
- 1. Responsive theme
- 2. Add settings -> Add Users, Manage Users
- 3. Support GIF (.gif),
- 4. Support PNG (.png),
- 5. Support TIFF (.tiff, .tif),
- 6. Support BMP (.bmp, .dib, .rle),
- 7. Support JPEG (~.jpeg~, ~.jpg~, .jpe, .jfif),
- 8. Support TGA (.tga, .vda, .vst, .icb),
- 9. Support DDS (.dds)
+ - [ ] Responsive theme
+ - [ ] Add settings -> Add Users, Manage Users
+ - [x] Support GIF (.gif),
+ - [x] Support PNG (.png),
+ - [ ] Support TIFF (.tiff, .tif),
+ - [ ] Support BMP (.bmp, .dib, .rle),
+ - [ ] Support JPEG (~.jpeg~, ~.jpg~, .jpe, .jfif),
+ - [ ] Support TGA (.tga, .vda, .vst, .icb),
+ - [ ] Support DDS (.dds)

@@ -28,4 +28,5 @@ $config['site_title'] = 'Picturo';
 $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['nbOfFolders'] = 8;
+$config['theme'] = 'default'; 			// Set the theme (defaults to "default")
 ?>

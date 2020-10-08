@@ -153,7 +153,14 @@ class Thumbnail {
 
   private function generate($src, $dest, $thumb_w = 164, $thumb_h = 164) {
     $src = urldecode($src);
-    $srcimg = imagecreatefromjpeg($src);
+    $ext = pathinfo($src, PATHINFO_EXTENSION);
+    if($ext == "jpg" || $ext == "jpeg") {
+      $srcimg = imagecreatefromjpeg($src);
+    }
+    if($ext == "png") {
+      $srcimg = imagecreatefrompng($src);
+    }
+    // $srcimg = imagecreatefromjpeg($src);
     $src_w = imagesx($srcimg);
     $src_h = imagesy($srcimg);
     $src_ratio = $src_w/$src_h;

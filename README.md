@@ -7,11 +7,11 @@ Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery ru
 ## Demo
 You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the demo is private but you can login with the following credentials :
 
-user : admin
-password : admin
+``user : admin``
+``password : admin``
 
 ## Requirements
-To run Picturo you will need PHP 5.2.4+ and GD Library on your server. If you’re running Apache you will also require mod_rewrite to be enabled.
+To run Picturo you will need ``PHP 5.2.4+`` and ``GD Library`` on your server. If you’re running Apache you will also require ``mod_rewrite`` to be enabled.
 
 ## Installation
 First download Picturo and extract it on your server.
@@ -23,8 +23,8 @@ Customize settings by editing config.php in the root folder of Picturo. To overr
 ### Privatize your site
 Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. By default, there is an admin user with the password “admin” in the configuration file. Just uncomment the two following lines to enable private galleries :
 
-$config['private'] = true;
-$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';
+``$config['private'] = true;``
+``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';``
 Passwords are SHA-1 strings, you can generate your passwords online here.
 
 ### Add galleries
@@ -37,43 +37,44 @@ Picturo supports themes with Twig as templating engine they are located in the t
 
 All themes must include two files :
 
-gallery.html
-detail.html
+``gallery.html``
+``detail.html``
 If you want to keep your galleries private, you will need a third file “login.html”.
 
 Each file will have a basic set of variable, plus specific variable.
 
 Default variables, available for all files :
 
-{{ base_url }} : The URL of your site
-{{ theme_url }} : The URL of your active theme
-{{ site_title }} : The title of your website
-{{ username }} : The logged in username (if you use private gallery)
+``{{ base_url }} : The URL of your site``
+``{{ theme_url }} : The URL of your active theme``
+``{{ site_title }} : The title of your website``
+``{{ username }} : The logged in username (if you use private gallery)``
 Variables for gallery.html, which will list all folders and pictures :
 
-{{ url }} : The current url
-{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name
-{{ folders }} : An array containing folder objects for current url. Each folder has 3 attributes (url, thumbnail_url, name)
-{{ images }} : An array containing image objects for current url. Each image has 3 attributes (url, thumbnail_url, name)
-{{ page_count }} : The total count of pages for current url.
-{{ current_page }} : The current page
+``{{ url }} : The current url``
+``{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name``
+``{{ folders }} : An array containing folder objects for current url. Each folder has 3 attributes (url, thumbnail_url, name)``
+``{{ images }} : An array containing image objects for current url. Each image has 3 attributes (url, thumbnail_url, name)``
+``{{ page_count }} : The total count of pages for current url.``
+``{{ current_page }} : The current page``
 Variables for detail.html, which will display one picture :
 
-{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name
-{{ image_url }} : The URL of the current image
-{{ image_previous_url }} : The URL of the previous image
-{{ image_next_url }} : The URL of the next image
+``{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name``
+``{{ image_url }} : The URL of the current image``
+``{{ image_previous_url }} : The URL of the previous image``
+``{{ image_next_url }} : The URL of the next image``
 Variables for login.html, which will display the login form :
 
-{{ login_error }} : Tell if login attempt was valid or not
-{{ username }} : The username entered in login form input
+``{{ login_error }} : Tell if login attempt was valid or not``
+``{{ username }} : The username entered in login form input``
+
 Thumbnail generation
 For easy thumbnail generation in your theme, there is an helper function available in your views.
 You should use the function picturo_thumbnail in your views.
 
 For example, if you want to generate a squared 300px by 300px thumbnail, insert the following line in your view :
 
-{% picturo_thumbnail(thumbnail_url, 300, 300) %}
+``{% picturo_thumbnail(thumbnail_url, 300, 300) %}``
 
 Thumbnail will be be automagically created in a folder matching the size of the thumbnail !
 

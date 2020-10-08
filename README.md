@@ -17,3 +17,4 @@ Picturo was inspired by [Pico](https://github.com/gilbitron/Pico).
  3. Support GIF, PNG,
  4. Support TIFF (.tiff, .tif),
  5. Support BMP (.bmp, .dib)
+ 6. Support for all JPG formats (.jpeg, .jpg, .jpe, .jfif)

@@ -16,5 +16,6 @@ Picturo was inspired by [Pico](https://github.com/gilbitron/Pico).
  2. Add settings -> Add Users, Manage Users
  3. Support GIF, PNG,
  4. Support TIFF (.tiff, .tif),
- 5. Support BMP (.bmp, .dib)
+ 5. Support BMP (.bmp, .dib, .rle)
  6. Support JPG formats (~.jpeg~, ~.jpg~, .jpe, .jfif)
+ 7. Support TGA (.tga)

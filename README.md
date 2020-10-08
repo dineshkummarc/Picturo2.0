@@ -15,3 +15,4 @@ Picturo was inspired by [Pico](https://github.com/gilbitron/Pico).
  1. Responsive theme
  2. Add settings -> Add Users, Manage Users
  3. Support GIF, PNG,
+ 4. Support TIFF (.tiff, .tif),

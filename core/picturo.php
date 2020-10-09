@@ -37,7 +37,7 @@ class Picturo {
       $this->getFiles($realPath);
       foreach($this->foldersPath as $k => $folder) {
         $tmp_array[$k]['name'] = basename($folder);
-        $files = glob("$folder/*.{jpg,jpeg,jpe,png,gif,JPG,JPE,JPEG,PNG,GIF}", GLOB_BRACE);
+        $files = glob("$folder/*.{jpg,jpeg,jpe,png,gif,bmp,JPG,JPE,JPEG,PNG,GIF,BMP}", GLOB_BRACE);
         $temp_url = '/' . $this->url . "/" . urlencode($tmp_array[$k]['name']);
         $tmp_array[$k]['thumbnail_url'] = $temp_url . "/" . basename($files[0]);
         $tmp_array[$k]['url'] = $config['base_url'] . preg_replace('/(\/)+\//', '/', $temp_url);
@@ -96,7 +96,7 @@ class Picturo {
           $tmp_array['name'] = basename($folder);
           if ($this->isFolderAllowedToDisplay($tmp_array['name']) ) {
           
-          $files = glob("$folder/*.{jpg,jpeg,jpe,png,gif,JPG,JPEG,JPE,PNG,GIF}", GLOB_BRACE);
+          $files = glob("$folder/*.{jpg,jpeg,jpe,png,gif,bmp,JPG,JPEG,JPE,PNG,GIF,BMP}", GLOB_BRACE);
           if (!empty($files)) {
               $tmp_array['images_count'] = count($files);
   
@@ -490,7 +490,7 @@ class Picturo {
           if( is_dir($file)){
             array_push($this->foldersPath, $file);
           }
-          if(is_file($file) && preg_match("/.jpg|.jpeg|.png|.gif/i", $file)) {
+          if(is_file($file) && preg_match("/.jpg|.jpeg|.png|.gif|.bmp|.jpe/i", $file)) {
             array_push($this->imagesPath, $file);
           }
         }

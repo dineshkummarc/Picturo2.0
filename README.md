@@ -2,7 +2,7 @@ Picturo
 =======
 
 ## About the Application
-Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for photos.
+Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
 
 ## Demo
 You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the demo is private but you can login with the following credentials : <br/>
@@ -27,8 +27,7 @@ Picturo can keep your galleries private, you just have to edit config.php and se
 Passwords are SHA-1 strings, you can generate your passwords online here.
 
 ### Add galleries
-Your photos must be stored in content folder, if you want to add a gallery you just need to create a folder within your content folder.
-Galleries thumbnail are generated with the first picture found in the folder.
+Your photos must be stored in content folder, if you want to add a gallery you just need to create a folder within your content folder. Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
 Picturo supports themes with Twig as templating engine they are located in the themes folder. All themes must include two files : <br/>

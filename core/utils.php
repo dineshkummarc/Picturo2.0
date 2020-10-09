@@ -56,7 +56,7 @@ class Helper {
     });
     $twig->addFunction($thumbnail_function);
     $download_function = new Twig_SimpleFunction('picturo_download', function ($path)  use($base_url,$config) {
-      $imgTag = '<a href="' . $base_url . '/serve/'. $path .'"><img src="'. $base_url  .'/themes/'. $config['theme'].'/img/download.png" alt="Télécharger l\'image" width="48" height="48"/></a>';
+      $imgTag = '<a href="' . $base_url . '/content/'. $path .'"><img src="'. $base_url  .'/themes/'. $config['theme'].'/img/download.png" alt="Télécharger l\'image" width="48" height="48"/></a>';
       echo $imgTag;
     });
     $twig->addFunction($download_function);

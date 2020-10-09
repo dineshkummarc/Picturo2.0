@@ -247,7 +247,7 @@ class Picturo {
         }
       }
 
-      $retour = str_replace(' ', '+', '/modifications/'.$thumbnail);
+      $retour = str_replace(' ', '+', '/content/'.$thumbnail);
 
       # Inclusion de la classe customImage
       include_once(dirname(__FILE__).'/class.custom.image.php');
@@ -461,7 +461,7 @@ class Picturo {
           $modifications = '/';
         } else {
           $address =  substr($REQUEST_URI, 0,  strpos($REQUEST_URI, $crumb) + strlen($crumb));
-          $modifications = ($config['private'] && Helper::isAdmin($_SESSION['username'])) ? '/modifications/' : '/';
+          $modifications = ($config['private'] && Helper::isAdmin($_SESSION['username'])) ? '/content/' : '/';
         }
         if($index == count($crumbs) - 1 && $index > 0 && substr($crumb,-4,1) == '.') {
           $this->breadcrumb[$key] = $config['base_url'] . $modifications . $crumbs[$index-1] . '/' . $crumb;

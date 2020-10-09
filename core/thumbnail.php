@@ -83,7 +83,7 @@ class Thumbnail {
     if (!$width){$width=$DEFAULT_WIDTH;}
     if (!$height){$height=$DEFAULT_HEIGHT;}
     $recadrageX=0;$recadrageY=0;
-    $motif='#\.(jpe?g|png|gif)#i'; // Merci à JéromeJ pour la correction  ! 
+    $motif='#\.(jpe?g|jpe|png|gif)#i'; // Merci à JéromeJ pour la correction  ! 
     //$rempl=$add_to_thumb_filename.'_'.$width.'x'.$height.'.$1';
     $thumb_name=$this->cache_path;
     // sortie prématurée:
@@ -154,7 +154,7 @@ class Thumbnail {
   private function generate($src, $dest, $thumb_w = 164, $thumb_h = 164) {
     $src = urldecode($src);
     $ext = pathinfo($src, PATHINFO_EXTENSION);
-    if($ext == "jpg" || $ext == "jpeg") {
+    if($ext == "jpg" || $ext == "jpeg" || $ext == "jpe") {
       $srcimg = imagecreatefromjpeg($src);
     }
     if($ext == "png") {
@@ -184,7 +184,7 @@ class Thumbnail {
     imagedestroy($srcimg);
 
     // imagejpeg($final, $dest, 80); //again, assuming jpeg, 80% quality
-    if($ext == "jpg" || $ext == "jpeg") {
+    if($ext == "jpg" || $ext == "jpeg" || $ext == "jpe") {
       imagejpeg($final, $dest, 80); //again, assuming jpeg, 80% quality
     }
     if($ext == "png") {

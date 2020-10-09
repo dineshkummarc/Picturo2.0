@@ -1,0 +1,26 @@
+{% extends "template.twig" %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block bodyClass %}gallery{% endblock %}
+
+{% block content %}
+{%if breadcrumb %}
+
+<ul class="breadcrumb">
+   {% for link,url in breadcrumb %}
+   <li>
+   {% if url %}
+   <a href="{{ url }}">{{ link }}</a></li>
+   {% else %}
+   {{ link }}
+   {% endif %}
+   {% endfor %}
+</ul>
+{% endif %}
+<div class="image-wrapper">
+   Erreur 404 ! Fichier non trouvé.
+   {% if error_msg %}<br/>{{ error_msg }}{% endif %}
+</div>
+
+{% endblock %}

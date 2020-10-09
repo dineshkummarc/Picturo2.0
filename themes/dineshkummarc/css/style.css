@@ -143,13 +143,10 @@ a:hover, a:active {
    border:0;
 }
 .error, .success {
-   font-size: 18px;
-   color: #E74C3C;
+   font-size: 10px;
    padding: 10px;
    margin: 0 0 1em;
-   font-weight: bold;
-   /* color: #FFF; */
-   border-radius: 30px;
+   color: #FFF;
 }
 .login input,
 .new input {

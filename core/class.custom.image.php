@@ -31,7 +31,12 @@ class customImage {
 		# Crée l'image
 		$src_image = false ;
 		switch ($info['mime']) {
+			case 'image/jpg':
 			case 'image/jpeg':
+			case 'image/jpe':
+			// case 'image/jfi':
+			// case 'image/jfif':
+			// case 'image/jif':
 				$src_image = imagecreatefromjpeg($file);
 			break;
 			case 'image/png':
@@ -60,6 +65,10 @@ class customImage {
 		switch(strtolower(strrchr($dest_file,'.'))) {
 			case ".jpg":
 			case ".jpeg":
+			case ".jpe":
+			// case ".jfi":
+			// case ".jfif":
+			// case ".jif":
 				return imagejpeg($this->image,$dest_file,$quality);
 			case ".png":
 				return imagepng($this->image,$dest_file, 9);

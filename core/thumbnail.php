@@ -83,7 +83,7 @@ class Thumbnail {
     if (!$width){$width=$DEFAULT_WIDTH;}
     if (!$height){$height=$DEFAULT_HEIGHT;}
     $recadrageX=0;$recadrageY=0;
-    $motif='#\.(jpe?g|jpe|png|gif)#i'; // Merci à JéromeJ pour la correction  ! 
+    $motif='#\.(jpe?g|jpe|png|gif|bmp)#i'; // Merci à JéromeJ pour la correction  ! 
     //$rempl=$add_to_thumb_filename.'_'.$width.'x'.$height.'.$1';
     $thumb_name=$this->cache_path;
     // sortie prématurée:
@@ -162,6 +162,9 @@ class Thumbnail {
     }
     if($ext == "gif") {
       $srcimg = imagecreatefromgif($src);
+    }
+    if($ext == "bmp") {
+      $srcimg = imagecreatefrombmp($src);
     }
     // $srcimg = imagecreatefromjpeg($src); /* replaced with image type
     $src_w = imagesx($srcimg);

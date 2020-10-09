@@ -82,6 +82,7 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
 ## So Far Developers Credit:-
 1. Creator -> https://github.com/jbleuzen
 2. Modifications -> https://github.com/jerrywham
+3. Modifications -> https://github.com/dineshkummarc
 
 ## TODO:
  - [ ] Responsive theme
@@ -105,3 +106,5 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] javascript preloader for big pictures
  - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)
  - [x] pictures and folders are sorting with natural case insensitive sort
+Optional: 
+ - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the album

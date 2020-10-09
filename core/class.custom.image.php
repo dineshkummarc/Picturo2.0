@@ -45,6 +45,9 @@ class customImage {
 			case 'image/gif':
 				$src_image = imagecreatefromgif($file);
 			break;
+			case 'image/bmp':
+				$src_image = imagecreatefrombmp($file);
+			break;
 			default:
 				return false;
 			break;
@@ -74,6 +77,8 @@ class customImage {
 				return imagepng($this->image,$dest_file, 9);
 			case ".gif":
 				return imagegif($this->image,$dest_file);
+			case ".bmp":
+				return imagebmp($this->image,$dest_file);
 			default:
 				return false;
 		}

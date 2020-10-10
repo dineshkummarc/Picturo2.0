@@ -4,9 +4,7 @@
 }
 
 body{
-    background:url('../img/bg.jpg') no-repeat fixed #1d1d1d;
-	color:#eee;
-	font-size:13px;
+    background:url('../img/bg.jpg') no-repeat #1d1d1d;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,29 +32,25 @@ body{
 	opacity:0.8;
 }
 
+/*	.steam2 shows the bottom part (dark version)
+	of the background image.
+*/
+
 .steam2{
-
-   /*	.steam2 shows the bottom part (dark version)
-	*	of the background image.
-	*/
-
 	background-position:left bottom;
 }
 
+/* Using the HTML4 hgroup element */
 hgroup{
-
-	/* Using the HTML4 hgroup element */
-
 	display:block;
 	margin:0 auto;
 	width:850px;
-	font-family:'Century Gothic',Calibri,'Myriad Pro',Arial,Helvetica,sans-serif;
 	text-align:center;
 }
 
 h1{
 	color:#76D7FB;
-	font-size:60px;
+	font-size:30px;
 	text-shadow:3px 3px 0 #3D606D;
 	white-space:nowrap;
 }
@@ -68,12 +62,32 @@ h2{
 	padding:25px 0;
 }
 
-/* Only Needed For The Demo Page */
-
-p.createdBy{
-	font-size:15px;
-	font-weight:normal;
-	margin:50px;
-	text-align:center;
-	text-shadow:none;
+.header {
+   background: #2EAE9B;
+   padding: 1.5em 0;
+   margin-bottom: 3em;
+   color: #afe1da;
+   font-family: Helvetica, arial, sans-serif;
 }
+.header a { color: #afe1da; }
+.header h1 a,
+.header a:hover { color: #fff; }
+.header h1 {
+   font-weight: bold;
+   text-shadow:3px 3px 0 #3D606D;
+   margin: 0;
+   font-size:2em;
+   float: left;
+}
+.header .nav {
+   float: right;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.header .nav li { display: inline; }
+.header .nav a {
+   font-weight: bold;
+   margin-left: 20px;
+}
+

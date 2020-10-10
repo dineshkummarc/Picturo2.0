@@ -11,6 +11,11 @@ You can try Picturo here [Demo](http://picturomobile.infinityfreeapp.com/), actu
 ``password : admin``
 </b>
 
+### Screenshots
+
+Login
+![login.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/login.png)
+
 ## Requirements
 To run Picturo you will need <b>``PHP 5.2.4+``</b> and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.
 
@@ -85,6 +90,7 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
 
 ## TODO:
  - [ ] Responsive theme
+ - [ ] Mobile Friendly theme
  - [ ] Add settings -> Add Users, Manage Users
  - [x] Support GIF (.gif),
  - [x] Support PNG (.png),
@@ -92,10 +98,12 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Support BMP (.bmp),
  - [ ] Support Other BMP Types (.dib, .rle),
  - [x] Support JPEG (.jpeg, .jpg),
- - [x] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif),
+ - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif),
  - [ ] Support TGA (.tga, .vda, .vst, .icb),
  - [ ] Support DDS (.dds)
  - [x] Better authentification method
+ - [x] User Friendly Error Messages
+ - [ ] User Friendly Language Translation - English, French
  - [x] Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
  - [x] Add administrator status
  - [x] Add multiple users

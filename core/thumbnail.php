@@ -164,7 +164,7 @@ class Thumbnail {
       $srcimg = imagecreatefromgif($src);
     }
     if($ext == "bmp") {
-      $srcimg = imagecreatefrombmp($src);
+      $srcimg = imagecreatetruecolor($src);
     }
     // $srcimg = imagecreatefromjpeg($src); /* replaced with image type
     $src_w = imagesx($srcimg);
@@ -195,6 +195,9 @@ class Thumbnail {
     }
     if($ext == "gif") {
       imagegif($final, $dest); //again, assuming gif, 100% quality
+    }
+    if($ext == "bmp") {
+      imagebmp($final, $dest); //again, assuming gif, 100% quality
     }
   }
 

@@ -17,7 +17,8 @@ $config['items_per_page'] = 15;
 // Un-comment to make your gallery private
 
 $config['private'] = true;
-$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';
+$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997'; // user credentials
+$config['admin_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997'; // admin credentials
 
 // To add a custom config setting:
 
@@ -27,6 +28,7 @@ $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_set
 $config['site_title'] = 'Picturo';
 $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
+$config['private_pass']['toto'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['nbOfFolders'] = 9;
 $config['theme'] = 'dineshkummarc'; 			// Set the theme -> default / dineshkummarc / jerrywham (defaults to "default")
 ?>

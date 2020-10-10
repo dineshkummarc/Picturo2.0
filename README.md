@@ -89,8 +89,10 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Support GIF (.gif),
  - [x] Support PNG (.png),
  - [ ] Support TIFF (.tiff, .tif),
- - [ ] Support BMP (.bmp, .dib, .rle),
- - [x] Support JPEG (.jpeg, .jpg, .jpe, .jfif),
+ - [x] Support BMP (.bmp),
+ - [ ] Support Other BMP Types (.dib, .rle),
+ - [x] Support JPEG (.jpeg, .jpg),
+ - [x] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif),
  - [ ] Support TGA (.tga, .vda, .vst, .icb),
  - [ ] Support DDS (.dds)
  - [x] Better authentification method
@@ -100,6 +102,7 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Add possibility to hide folders to users via administration. By default, a new folder is available for all users.
  - [x] Administrator can manage pictures (rotate, cropped, cut, reduce, setWidth, setHeight). Modifications are made on thumbnails. Originals are not modified.
  - [x] Add error view
+ - [x] Added a new design for error view
  - [x] Update theme (footer is always at the bottom of the page -not bottom of the screen- whatever the height of content)
  - [x] Pictures (originals) can be download one by one by users
  - [x] javascript preloader for big pictures

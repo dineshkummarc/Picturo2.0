@@ -46,7 +46,7 @@ class customImage {
 				$src_image = imagecreatefromgif($file);
 			break;
 			case 'image/bmp':
-				$src_image = imagecreatefrombmp($file);
+				$src_image = imagecreatetruecolor($file);
 			break;
 			default:
 				return false;

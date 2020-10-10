@@ -13,13 +13,13 @@
 
       <header class="header clearfix">
          <div class="inner">
-            <h1><a href="{{ base_url }}">{{ site_title }}</a></h1>
+            <h1><a>{{ site_title }}</a></h1>
             {% if username != "" %}
 
             <ul class="nav">
                <li>Hello {{ username }} !</li>
                {% if admin %}
-
+               <li><a href="{{ base_url }}">Albums</a></li>
                <li><a href="{{ base_url }}/createUser">Manage users</a></li>
                <li><a href="{{ base_url }}/settings">Settings</a></li>
 			   {% endif %}

@@ -5,7 +5,7 @@ Picturo
 Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
 
 ## Demo
-You can try Picturo here [Demo](http://picturo.johanbleuzen.fr), actually the demo is private but you can login with the following credentials : <br/>
+You can try Picturo here [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
 <b>
 ``user : admin`` <br/>
 ``password : admin``

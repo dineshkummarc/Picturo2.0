@@ -77,14 +77,3 @@ p.createdBy{
 	text-align:center;
 	text-shadow:none;
 }
-
-a, a:visited {
-	text-decoration:none;
-	outline:none;
-	border-bottom:1px dotted #97cae6;
-	color:#97cae6;
-}
-
-a:hover{
-	border-bottom:1px dashed transparent;
-}

@@ -50,9 +50,8 @@ hgroup{
 
 h1{
 	color:#76D7FB;
-	font-size:30px;
+	font-size:60px;
 	text-shadow:3px 3px 0 #3D606D;
-	white-space:nowrap;
 }
 
 h2{
@@ -62,32 +61,19 @@ h2{
 	padding:25px 0;
 }
 
-.header {
-   background: #2EAE9B;
-   padding: 1.5em 0;
-   margin-bottom: 3em;
-   color: #afe1da;
-   font-family: Helvetica, arial, sans-serif;
+.error {
+   border-color: #bd362f #bd362f #802420;
+   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+   background-color: #da4f49;
+   background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+   background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+   background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+   background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+   background-repeat: repeat-x;
+   color: #ffffff;
+   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+   background-color: #bd362f;
 }
-.header a { color: #afe1da; }
-.header h1 a,
-.header a:hover { color: #fff; }
-.header h1 {
-   font-weight: bold;
-   text-shadow:3px 3px 0 #3D606D;
-   margin: 0;
-   font-size:2em;
-   float: left;
-}
-.header .nav {
-   float: right;
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-.header .nav li { display: inline; }
-.header .nav a {
-   font-weight: bold;
-   margin-left: 20px;
-}
-

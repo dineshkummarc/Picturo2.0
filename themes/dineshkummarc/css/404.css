@@ -4,20 +4,20 @@
 }
 
 body{
-	background:url('../img/bg.png') no-repeat fixed #1d1d1d;
+    background:url('../img/bg.jpg') no-repeat fixed #1d1d1d;
 	color:#eee;
 	font-size:13px;
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #rocket{
 	width:275px;
 	height:375px;
 	background:url('../img/rocket.png') no-repeat;
-	margin:140px auto 50px;
+	margin:10px auto 50px;
 	position:relative;
 }
 

@@ -12,9 +12,26 @@ You can try Picturo here [Demo](http://picturomobile.infinityfreeapp.com/), actu
 </b>
 
 ### Screenshots
-
 Login
 ![login.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/login.png)
+
+Login Fail
+![login-fail.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/login-fail.png)
+
+Albums
+![Albums.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/Albums.png)
+
+Albums+Photos
+![album-photos.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/album-photos.png)
+
+Album View
+![album-view.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/album-view.png)
+
+Photo View
+![photo.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/photo.png)
+
+Error View
+![error.png](https://github.com/dineshkummarc/picturo/blob/master/screenshots/error.png)
 
 ## Requirements
 To run Picturo you will need <b>``PHP 5.2.4+``</b> and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.

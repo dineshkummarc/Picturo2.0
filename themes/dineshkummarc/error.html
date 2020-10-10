@@ -5,6 +5,11 @@
 {% block bodyClass %}gallery{% endblock %}
 
 {% block content %}
+
+<link rel="stylesheet" href="{{ theme_url }}/css/404.css" />
+<script src="{{ theme_url }}/js/jquery.min.js"></script>
+<script src="{{ theme_url }}/js/404-script.js"></script>
+
 {%if breadcrumb %}
 
 <ul class="breadcrumb">
@@ -22,7 +27,7 @@
    <div id="rocket"></div>
 
 <hgroup>
-    <h1>Page Not Found</h1>
+    <h1>Even the things we love hard lost in space sometime</h1>
     <h2>We couldn't find what you were looking for.</h2>
 </hgroup>
    {% if error_msg %}<br/>{{ error_msg }}{% endif %}

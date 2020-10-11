@@ -30,5 +30,10 @@ $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['private_pass']['toto'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['nbOfFolders'] = 9;
-$config['theme'] = 'dineshkummarc'; 			// Set the theme -> default / dineshkummarc / jerrywham (defaults to "default")
+$config['theme'] = 'yashanyket';			// Set the theme -> default / dineshkummarc / jerrywham / yashanyket (defaults to "default")
+// $config['locale'] = '';
+// $config['timezone'] = '';
+$config['date_format'] = 'jS M Y';
+$config['items_per_page'] = 25;              // defaults to 15 images per page
+
 ?>

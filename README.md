@@ -105,21 +105,22 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
 3. Modifications -> https://github.com/dineshkummarc
 
 ## TODO:
- - [ ] Responsive theme
- - [ ] Mobile Friendly theme
+ - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
+ - [ ] T.V. Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)
+ - [ ] Mobile Friendly theme (Support for Resolution 480x853, 600x960, 800x1280, 900x1280)
  - [ ] Add settings -> Add Users, Manage Users
- - [x] Support GIF (.gif),
- - [x] Support PNG (.png),
- - [ ] Support TIFF (.tiff, .tif),
- - [x] Support BMP (.bmp),
- - [ ] Support Other BMP Types (.dib, .rle),
- - [x] Support JPEG (.jpeg, .jpg),
- - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif),
- - [ ] Support TGA (.tga, .vda, .vst, .icb),
+ - [x] Support GIF (.gif)
+ - [x] Support PNG (.png)
+ - [ ] Support TIFF (.tiff, .tif)
+ - [x] Support BMP (.bmp)
+ - [ ] Support Other BMP Types (.dib, .rle)
+ - [x] Support JPEG (.jpeg, .jpg)
+ - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif)
+ - [ ] Support TGA (.tga, .vda, .vst, .icb)
  - [ ] Support DDS (.dds)
  - [x] Better authentification method
  - [x] User Friendly Error Messages
- - [ ] User Friendly Language Translation - English, French
+ - [ ] User Friendly Language - English
  - [x] Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
  - [x] Add administrator status
  - [x] Add multiple users

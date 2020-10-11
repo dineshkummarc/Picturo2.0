@@ -2,10 +2,10 @@ Picturo
 =======
 
 ## About the Application
-Picturo is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
+[Picturo](https://github.com/dineshkummarc/Picturo) is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
 
 ## Demo
-You can try Picturo here [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
+You can try Picturo here at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
 <b>
 ``user : admin`` <br/>
 ``password : admin``
@@ -46,13 +46,13 @@ Customize settings by editing config.php in the root folder of Picturo. To overr
 Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
 <b>``$config['private'] = true;`` <br/>
 ``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';`` <br/></b>
-Passwords are SHA-1 strings, you can generate your passwords online here.
+Passwords are SHA-1 strings, you can generate your passwords online here at [sha1-online](http://www.sha1-online.com/).
 
 ### Add galleries
 Your photos must be stored in content folder, if you want to add a gallery you just need to create a folder within your content folder. Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
-Picturo supports themes with Twig as templating engine they are located in the themes folder. All themes must include two files : <br/>
+Picturo supports themes with [Twig](https://twig.symfony.com/) as templating engine they are located in the themes folder. All themes must include two files : <br/>
 <b>``gallery.html`` <br/>
 ``detail.html`` <br/></b>
 If you want to keep your galleries private, you will need a third file <b>“login.html”</b>. Each file will have a basic set of variable, plus specific variable.
@@ -94,13 +94,12 @@ For easy thumbnail generation in your theme, there is an helper function availab
 Thumbnail will be be automagically created in a folder matching the size of the thumbnail !
 
 ### Other themes
-I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use Twig template for easy theming.
-And please, show me your theme if you want to share it.
+I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use [Twig template](https://twig.symfony.com/doc/3.x/templates.html#template-inheritance) for easy theming. And please, show me your theme if you want to share it.
 
 ### Contribute
 Help make Picturo better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo/issues).
 
-## So Far Developers Credit:-
+## Developers Credit:-
 1. Creator -> https://github.com/jbleuzen
 2. Modifications -> https://github.com/jerrywham
 3. Modifications -> https://github.com/dineshkummarc

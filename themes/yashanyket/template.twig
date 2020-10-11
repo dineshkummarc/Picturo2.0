@@ -24,11 +24,6 @@
                <li><a href="{{ base_url }}/settings">Settings</a></li>
 			   {% endif %}
 
-            {% if user %}
-            <li><a href="{{ base_url }}">Albums</a></li>
-               <li><a href="{{ base_url }}/settings">Settings</a></li>
-            {% endif %}
-
                <li><a href="{{ base_url }}/logout">Logout</a></li>
             </ul>
             {% endif %}
@@ -36,8 +31,6 @@
          </div>
       </header>
       {% endif %}
-
-      
       {% if view == "login" and admin %}
 
       <header class="header clearfix">
@@ -59,8 +52,6 @@
          </div>
       </header>
       {% endif %}
-
-
       <div class="content inner">
          {{msg}}
          {% block content %}{% endblock %}

@@ -1,3 +1,20 @@
+@media screen and (max-width:2048px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 900px;
+   margin: 0 auto;
+}
+}
+
 @media screen and (max-width:1920px) {
    .image-wrapper img {
       position: relative;

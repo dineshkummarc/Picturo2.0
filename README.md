@@ -5,7 +5,7 @@ Picturo
 [Picturo](https://github.com/dineshkummarc/Picturo) is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your pictures in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
 
 ## Demo
-You can try Picturo here at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
+You can try Picturo at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
 <b>
 ``user : admin`` <br/>
 ``password : admin``
@@ -44,8 +44,10 @@ Customize settings by editing config.php in the root folder of Picturo. To overr
 
 ### Privatize your site
 Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
+~~~
 <b>``$config['private'] = true;`` <br/>
 ``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';`` <br/></b>
+~~~
 Passwords are SHA-1 strings, you can generate your passwords online here at [sha1-online](http://www.sha1-online.com/).
 
 ### Add galleries
@@ -58,13 +60,16 @@ Picturo supports themes with [Twig](https://twig.symfony.com/) as templating eng
 If you want to keep your galleries private, you will need a third file <b>“login.html”</b>. Each file will have a basic set of variable, plus specific variable.
 
 Default variables, available for all files : <br/>
+~~~
 <b>
 ``{{ base_url }} : The URL of your site`` <br/>
 ``{{ theme_url }} : The URL of your active theme`` <br/>
 ``{{ site_title }} : The title of your website`` <br/>
-``{{ username }} : The logged in username (if you use private gallery)`` <br/></b>
+``{{ username }} : The logged in username (if you use private gallery)`` <br/></b> 
+~~~
 
 Variables for gallery.html, which will list all folders and pictures : <br/>
+~~~
 <b>
 ``{{ url }} : The current url`` <br/>
 ``{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name`` <br/>
@@ -73,20 +78,25 @@ Variables for gallery.html, which will list all folders and pictures : <br/>
 ``{{ page_count }} : The total count of pages for current url.`` <br/>
 ``{{ current_page }} : The current page`` <br/>
 </b>
+~~~
 
 Variables for detail.html, which will display one picture : <br/>
+~~~
 <b>
 ``{{ breadcrumb }} : An hash containing a splitted array of URL. Keys are URL and values are folders name`` <br/>
 ``{{ image_url }} : The URL of the current image`` <br/>
 ``{{ image_previous_url }} : The URL of the previous image`` <br/>
 ``{{ image_next_url }} : The URL of the next image`` <br/>
 </b>
+~~~
 
 Variables for login.html, which will display the login form : <br/>
+~~~
 <b>
 ``{{ login_error }} : Tell if login attempt was valid or not`` <br/>
 ``{{ username }} : The username entered in login form input`` <br/>
 </b>
+~~~
 
 ### Thumbnail generation
 For easy thumbnail generation in your theme, there is an helper function available in your views. You should use the function picturo_thumbnail in your views. For example, if you want to generate a squared 300px by 300px thumbnail, insert the following line in your view : <br/>

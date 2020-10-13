@@ -10,7 +10,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 1800px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }
@@ -27,7 +27,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 1687px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }
@@ -44,7 +44,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 1406px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }
@@ -61,7 +61,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 1265px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }
@@ -78,7 +78,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 1200px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }
@@ -95,7 +95,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 1125px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }
@@ -112,7 +112,7 @@
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 900px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
 }

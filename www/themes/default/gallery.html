@@ -1,0 +1,62 @@
+{% extends "template.twig" %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block bodyClass %}gallery{% endblock %}
+
+{% block content %}
+<div id="content">
+   <div class="inner">
+      {%if breadcrumb %}
+      <ul class="breadcrumb">
+         {% for name,url in breadcrumb %}
+         <li>
+         {% if url %}
+         <a href="{{ url }}">{{ name }}</a></li>
+         {% else %}
+         {{ name }}
+         {% endif %}
+         {% endfor %}
+      </ul>
+      {% endif %}
+      {% if folders %}
+      <div class="folders">
+         {% for folder in folders%}
+         <div class="folder">
+            <a href="{{ folder.url }}">
+               {{ picturo_thumbnail(folder.thumbnail_url, 284, 200) }}
+               <p>{{ folder.name }}</p>
+            </a>
+         </div>
+         {% endfor %}
+      </div>
+      {% endif %}
+      <div class="images">
+         {% for image in images %}
+         <div class="image">
+            <a href="{{ image.url }}">
+              {{ picturo_thumbnail(image.thumbnail_url, 164, 164) }}
+            </a>
+         </div>
+         {% endfor %}
+      </div>
+
+      {% if page_count > 1 %}
+      <ul class="pagination" style="clear:both">
+         {% for i in 1..page_count %}
+         {% if current_page + 1 == i %}
+         <li class="current">{{ i }}</li>
+         {% else %}
+         {% if i == 1 %}
+         <li><a href="{{base_url}}{{ url }}">{{ i }}</a></li>
+         {% else %}
+         <li><a href="{{base_url}}{{ url }}/page{{ i }}"> {{ i }}</a></li>
+         {% endif %}
+         {% endif %}
+         {% endfor %}
+      </ul>
+      {% endif %}
+   </div>
+</div>
+
+{% endblock %}

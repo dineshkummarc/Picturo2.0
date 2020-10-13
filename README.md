@@ -108,8 +108,8 @@ I plan to release some others theme later, but if your want to create your own I
 Help make Picturo better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo/issues).
 
 ## Developers Credit:-
-- [x] Creator -> https://github.com/jbleuzen
-- [x] Modifications -> https://github.com/jerrywham
+- [ ] Creator -> https://github.com/jbleuzen
+- [ ] Modifications -> https://github.com/jerrywham
 - [ ] Modifications -> https://github.com/dineshkummarc
 
 ## TODO:
@@ -117,6 +117,7 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [ ] Television Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)
  - [ ] Mobile Friendly theme (Support for Resolution 480x853, 600x960, 800x1280, 900x1280)
  - [ ] Add settings -> Add Users, Manage Users
+ - [ ] Add new Themes with new Designs
  - [x] Support GIF (.gif)
  - [x] Support PNG (.png)
  - [ ] Support TIFF (.tiff, .tif)
@@ -136,7 +137,7 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Administrator can manage pictures (rotate, cropped, cut, reduce, setWidth, setHeight). Modifications are made on thumbnails. Originals are not modified.
  - [x] Add error view
  - [x] Added a new design for error view
- - [x] Update theme (footer is always at the bottom of the page -not bottom of the screen- whatever the height of content)
+ - [x] Updated Default theme (footer is always at the bottom of the page -not bottom of the screen- whatever the height of content)
  - [x] Pictures (originals) can be download one by one by users
  - [x] Javascript preloader for big pictures
  - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)

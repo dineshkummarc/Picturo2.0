@@ -1,4 +1,4 @@
 cache/*
 !cache/keep.txt
-content
+content/*
 !content/keep.txt

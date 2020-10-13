@@ -39,6 +39,12 @@ To run Picturo you will need <b>``PHP 5.2.4+``</b> and <b>``GD Library``</b> on 
 ## Installation
 First download Picturo and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
 
+## Test Server
+1. Apache/2.4.41
+2. ~~PHP 5.2.4~~ PHP/7.1.33 or greater
+3. ~~MySQL 5~~ MySQL/5.0.12-dev
+4. [GD Library](https://www.php.net/manual/en/book.image.php)
+
 ### Upload your folders of pictures into content.
 Customize settings by editing config.php in the root folder of Picturo. To override a setting simply uncomment it in config.php and set your custom value.
 

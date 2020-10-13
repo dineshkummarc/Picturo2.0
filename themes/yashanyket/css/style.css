@@ -38,7 +38,7 @@ a:hover, a:active {
 /*---------------------------------------------*/
 /*
 .inner {
-   width: 900px;
+   width: 900px;   /* media */
    margin: 0 auto;
 }
 */
@@ -82,7 +82,7 @@ a:hover, a:active {
 
 [role=footer] {
    display : table-row;
-   height: 10%;
+   height: 100px;   /* media */
    text-align: left;
 }
 /* Misc Styles
@@ -289,7 +289,7 @@ img {
 /*---------------------------------------------*/
 /*
 .detail {
-   max-width: 90%;
+   max-width: 900px;   /* media */
 }
 */
 
@@ -355,7 +355,7 @@ img {
 }
 .image-wrapper img {
    border-bottom: 1px solid #CCC;
-   width:100%;
+   width:900px;   /* media */
 }
 .previous-image, .next-image {
    position: absolute;

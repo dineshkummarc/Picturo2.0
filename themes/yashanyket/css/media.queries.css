@@ -13,6 +13,13 @@
    width: 1800px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1800px;
+}
+
 }
 
 @media screen and (max-width:1920px) {
@@ -30,6 +37,13 @@
    width: 1687px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1687px;
+}
+
 }
 
 @media screen and (max-width:1600px) {
@@ -47,6 +61,13 @@
    width: 1406px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1406px;
+}
+
 }
 
 @media screen and (max-width:1440px) {
@@ -64,6 +85,13 @@
    width: 1265px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1265px;
+}
+
 }
 
 @media screen and (max-width:1366px) {
@@ -81,6 +109,13 @@
    width: 1200px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1200px;
+}
+
 }
 
 @media screen and (max-width:1280px) {
@@ -98,6 +133,13 @@
    width: 1125px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1125px;
+}
+
 }
 
 @media screen and (max-width:1024px) {
@@ -115,6 +157,13 @@
    width: 900px;                    /* 87.89% of the Screen width */
    margin: 0 auto;
 }
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 900px;
+}
+
 }
 
 /* Smaller tablet to small tablet: from 768px to 825px */

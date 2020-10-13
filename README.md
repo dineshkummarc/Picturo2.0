@@ -46,7 +46,8 @@ Customize settings by editing config.php in the root folder of Picturo. To overr
 Picturo can keep your galleries private, you just have to edit config.php and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
 ~~~
 $config['private'] = true;
-``$config['private_pass']['admin'] = 'd033e22ae348aeb5660fc2140aec35850c4da997';
+$config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
+$config['private_pass']['user'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 ~~~
 Passwords are SHA-1 strings, you can generate your passwords online here at [sha1-online](http://www.sha1-online.com/).
 
@@ -107,9 +108,9 @@ I plan to release some others theme later, but if your want to create your own I
 Help make Picturo better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo/issues).
 
 ## Developers Credit:-
-1. Creator -> https://github.com/jbleuzen
-2. Modifications -> https://github.com/jerrywham
-3. Modifications -> https://github.com/dineshkummarc
+- [x] Creator -> https://github.com/jbleuzen
+- [x] Modifications -> https://github.com/jerrywham
+- [ ] Modifications -> https://github.com/dineshkummarc
 
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)

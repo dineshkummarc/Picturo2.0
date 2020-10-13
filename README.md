@@ -13,25 +13,25 @@ password : admin
 
 ### Screenshots
 Login
-![login.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/login.png)
+![login.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/login.png)
 
 Login Fail
-![login-fail.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/login-fail.png)
+![login-fail.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/login-fail.png)
 
 Albums
-![Albums.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/Albums.png)
+![Albums.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/Albums.png)
 
 Albums+Photos
-![album-photos.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/album-photos.png)
+![album-photos.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/album-photos.png)
 
 Album View
-![album-view.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/album-view.png)
+![album-view.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/album-view.png)
 
 Photo View
-![photo.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/photo.png)
+![photo.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/photo.png)
 
 Error View
-![error.png](https://github.com/dineshkummarc/picturo2.0/blob/master/screenshots/error.png)
+![error.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/error.png)
 
 ## Requirements
 To run Picturo you will need <b>``PHP 5.2.4+``</b> and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.

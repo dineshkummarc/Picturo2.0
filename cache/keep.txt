@@ -1,1 +1,1 @@
-keep this folder intact while commiting any changes
+keep this folder intact while commiting any change using git

@@ -1,4 +1,4 @@
- Copyright (c) 2013 JohanBleuzen
+ Copyright (c) 2013 JohanBleuzen </br>
  Copyright (c) 2020 DINESHKUMMARC
 
  Permission is hereby granted, free of charge, to any person

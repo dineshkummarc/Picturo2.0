@@ -37,10 +37,10 @@ Error View
 ![error.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/error.png)
 
 ## Requirements
-To run Picturo you will need <b>``PHP 5.2.4+``</b> and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.
+To run Picturo2.0 you will need <b>``PHP 7.1.3+``</b> Twig 2.x (needs at least PHP 7.1.3 to run) and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.
 
 ## Installation
-First download Picturo and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
+First download Picturo2.0 and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
 
 ## Test Server
 1. Apache/2.4.41

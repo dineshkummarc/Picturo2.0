@@ -37,7 +37,7 @@ a:hover, a:active {
 /* Structure Styles
 /*---------------------------------------------*/
 .inner {
-   width: 900px;
+   width: 900px;          /* media */
    margin: 0 auto;
 }
 
@@ -80,7 +80,7 @@ a:hover, a:active {
 
 [role=footer] {
    display : table-row;
-   height: 100px;
+   height: 100px;          /* media */
    text-align: left;
 }
 /* Misc Styles
@@ -116,12 +116,12 @@ a:hover, a:active {
 .login .content {
    background: url(../img/camera.svg) no-repeat center 0px;
    padding-top: 12em;
-   background-size: 100px 73px;
+   background-size: 100px 73px;          /* media */
 }
 .login form,
 .new form {
    background-color: #FFF;
-   max-width: 400px;
+   max-width: 400px;          /* media */
    margin: 0 auto;
    min-width: 320px;
    padding: 2em 0 0 0;
@@ -156,7 +156,7 @@ a:hover, a:active {
    color: #333;
    border: none;
    margin: 0 6px 1em 0;
-   width: 212px;
+   width: 212px;          /* media */
    outline: none;
    border: 1px solid lightgrey;
    border-radius: 5px;
@@ -175,7 +175,7 @@ a:hover, a:active {
 }
 .login input[type="submit"],
 .new input[type="submit"] {
-   width: 200px;
+   width: 200px;          /* media */
    background-color: #2EAE9B;
    color: #FFF;
    border: none;
@@ -183,7 +183,7 @@ a:hover, a:active {
    margin-bottom: 2em;       
 }
 form.indentleft {
-   max-width:90%;
+   max-width:90%;          /* media */
 }
 .indentleft, .select {
    text-align: left;
@@ -236,7 +236,7 @@ div.select {
    background: #FFF;
    margin: 0 0.5em 4em 0.5em;
    border-bottom: 1px solid #CCC;
-   max-width: 284px;
+   max-width: 284px;          /* media */
 }
 .gallery .folder a {
    display: block;
@@ -280,7 +280,7 @@ img {
 /* Gallery
 /*---------------------------------------------*/
 .detail {
-   max-width: 900px;
+   max-width: 900px;          /* media */
 }
 
 /* Gallery
@@ -345,7 +345,7 @@ img {
 }
 .image-wrapper img {
    border-bottom: 1px solid #CCC;
-   width:900px;
+   width:900px;          /* media */
 }
 .previous-image, .next-image {
    position: absolute;
@@ -405,12 +405,12 @@ img {
 #custom-image {
    float:left;
    padding:5px 0 ;
-   min-width:400px;
+   min-width:400px;          /* media */
 }
 #custom-image-form {
    padding:5px 0 5px 25px ;
    float:left;
-   width:360px;
+   width:360px;          /* media */
 }
 #custom-image-form  p.field_head {
    margin-top:20px;

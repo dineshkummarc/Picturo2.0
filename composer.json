@@ -24,6 +24,7 @@
   },
   "require": {
     "twig/twig": "2.8.*",
+    "rector/rector": "dev-master",
     "bramus/router": "dev-master"
   }
 }

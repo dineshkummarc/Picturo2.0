@@ -1,5 +1,7 @@
 <?php
 
+require_once(ROOT_DIR.'/vendor/autoload.php');
+
 class Helper {
 
   public static function loadConfig() {
@@ -43,31 +45,73 @@ class Helper {
     global $config;
 
     // Load the theme
-    Twig_Autoloader::register();
-    $loader = new Twig_Loader_Filesystem(THEMES_DIR . $config['theme']);
-    $twig = new Twig_Environment($loader, $config['twig_config']);
+    // Twig_Autoloader::register();
+    // $loader = new Twig_Loader_Filesystem(THEMES_DIR . $config['theme']);
+    // $twig = new Twig_Environment($loader, $config['twig_config']);
+	
+	  $loader = new \Twig\Loader\FilesystemLoader(THEMES_DIR . $config['theme']);
+    $twig = new \Twig\Environment($loader, $config['twig_config']);
+	
     $twig->addExtension(new Twig_Extension_Debug());
+    $twig-> enableDebug();
+
     $base_url = $config['base_url'];
+    /*
     $thumbnail_function = new Twig_SimpleFunction('picturo_thumbnail', function ($path, $width, $height)  use($base_url) {
       $path = (substr($path, 0,1) == '/' ? substr($path,1) : $path);
       $imgTag = '<img src="' . $base_url . '/thumbnail/' . $width . 'x' . $height . '/' . $path .'" />';
       echo $imgTag;
     });
+    */
+
+    $thumbnail_function = new Twig_Function('picturo_thumbnail', function ($path, $width, $height)  use($base_url) {
+      $path = (substr($path, 0,1) == '/' ? substr($path,1) : $path);
+      $imgTag = '<img src="' . $base_url . '/thumbnail/' . $width . 'x' . $height . '/' . $path .'" />';
+      echo $imgTag;
+    });
+
     $twig->addFunction($thumbnail_function);
+
+    /*
     $preview_function = new Twig_SimpleFunction('picturo_preview', function ($path,$width,$height,$t,$w,$h,$x,$y,$d)  use($base_url) {
       $imgTag = '<img src="' . $base_url . '/preview/' . $width . 'x' . $height . '/' . $path .'?transform='.$t.'&amp;w='.$w.'&amp;h='.$h.'&amp;x='.$x.'&amp;y='.$y.'&amp;d='.$d .'" />';
       echo $imgTag;
     });
+    */
+
+    $preview_function = new Twig_Function('picturo_preview', function ($path,$width,$height,$t,$w,$h,$x,$y,$d)  use($base_url) {
+      $imgTag = '<img src="' . $base_url . '/preview/' . $width . 'x' . $height . '/' . $path .'?transform='.$t.'&amp;w='.$w.'&amp;h='.$h.'&amp;x='.$x.'&amp;y='.$y.'&amp;d='.$d .'" />';
+      echo $imgTag;
+    });
+
     $twig->addFunction($preview_function);
+
+    /*
     $download_function = new Twig_SimpleFunction('picturo_download', function ($path)  use($base_url,$config) {
       $imgTag = '<a href="' . $base_url . '/content/'. $path .'"><img src="'. $base_url  .'/themes/'. $config['theme'].'/img/download.png" alt="Télécharger l\'image" width="48" height="48"/></a>';
       echo $imgTag;
     });
+    */
+    
+    $download_function = new Twig_Function('picturo_download', function ($path)  use($base_url,$config) {
+      $imgTag = '<a href="' . $base_url . '/content/'. $path .'"><img src="'. $base_url  .'/themes/'. $config['theme'].'/img/download.png" alt="Télécharger l\'image" width="48" height="48"/></a>';
+      echo $imgTag;
+    });
+
     $twig->addFunction($download_function);
+
+    /*
     $input_function = new Twig_SimpleFunction('picturo_checkbox', function ($user,$foldername)  use($config) {
       $input = '<input type="checkbox" name="manageFoldersRights['.$user.'][]" value="'.$foldername.'"'.( (isset($config['manageFoldersRights']) && isset($config['manageFoldersRights'][$user])) ? (in_array($foldername, $config['manageFoldersRights'][$user]) ? ' checked="checked"' : ''): '').' id="'.$foldername.'-'.$user.'"><label for="'.$foldername.'-'.$user.'">'.$foldername.'</label><br/>';
       echo $input;
     });
+    */
+    
+    $input_function = new Twig_Function('picturo_checkbox', function ($user,$foldername)  use($config) {
+      $input = '<input type="checkbox" name="manageFoldersRights['.$user.'][]" value="'.$foldername.'"'.( (isset($config['manageFoldersRights']) && isset($config['manageFoldersRights'][$user])) ? (in_array($foldername, $config['manageFoldersRights'][$user]) ? ' checked="checked"' : ''): '').' id="'.$foldername.'-'.$user.'"><label for="'.$foldername.'-'.$user.'">'.$foldername.'</label><br/>';
+      echo $input;
+    });
+
     $twig->addFunction($input_function);
     $twig_vars['view'] = $name;
     $twig_vars['base_url'] = $config['base_url'];

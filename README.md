@@ -151,5 +151,8 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Javascript preloader for big pictures
  - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)
  - [x] Pictures and folders are sorting with natural case insensitive sort
+ - [ ] Update Vendor Directory for Bramus/router to use dev-master
+ - [ ] Update Vendor Directory for Twig to use v2.8.x
 Optional: 
  - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the album
+ - [ ] Update Composer

@@ -1,98 +1,115 @@
 Deprecated Features
 ===================
 
-This document lists all deprecated features in Twig. Deprecated features are
+This document lists deprecated features in Twig 2.x. Deprecated features are
 kept for backward compatibility and removed in the next major release (a
-feature that was deprecated in Twig 1.x is removed in Twig 2.0).
+feature that was deprecated in Twig 2.x is removed in Twig 3.0).
 
-Token Parsers
--------------
-
-* As of Twig 1.x, the token parser broker sub-system is deprecated. The
-  following class and interface will be removed in 2.0:
-
-  * ``Twig_TokenParserBrokerInterface``
-  * ``Twig_TokenParserBroker``
-
-Extensions
-----------
-
-* As of Twig 1.x, the ability to remove an extension is deprecated and the
-  ``Twig_Environment::removeExtension()`` method will be removed in 2.0.
-
-PEAR
-----
-
-PEAR support will be discontinued in Twig 2.0, and no PEAR packages will be
-provided. Use Composer instead.
-
-Filters
--------
-
-* As of Twig 1.x, use ``Twig_SimpleFilter`` to add a filter. The following
-  classes and interfaces will be removed in 2.0:
-
-  * ``Twig_FilterInterface``
-  * ``Twig_FilterCallableInterface``
-  * ``Twig_Filter``
-  * ``Twig_Filter_Function``
-  * ``Twig_Filter_Method``
-  * ``Twig_Filter_Node``
-
-* As of Twig 2.x, the ``Twig_SimpleFilter`` class is deprecated and will be
-  removed in Twig 3.x (use ``Twig_Filter`` instead). In Twig 2.x,
-  ``Twig_SimpleFilter`` is just an alias for ``Twig_Filter``.
-
-Functions
----------
-
-* As of Twig 1.x, use ``Twig_SimpleFunction`` to add a function. The following
-  classes and interfaces will be removed in 2.0:
-
-  * ``Twig_FunctionInterface``
-  * ``Twig_FunctionCallableInterface``
-  * ``Twig_Function``
-  * ``Twig_Function_Function``
-  * ``Twig_Function_Method``
-  * ``Twig_Function_Node``
-
-* As of Twig 2.x, the ``Twig_SimpleFunction`` class is deprecated and will be
-  removed in Twig 3.x (use ``Twig_Function`` instead). In Twig 2.x,
-  ``Twig_SimpleFunction`` is just an alias for ``Twig_Function``.
-
-Tests
+PSR-0
 -----
 
-* As of Twig 1.x, use ``Twig_SimpleTest`` to add a test. The following classes
-  and interfaces will be removed in 2.0:
+* PSR-0 classes are deprecated in favor of namespaced ones since Twig 2.7.
 
-  * ``Twig_TestInterface``
-  * ``Twig_TestCallableInterface``
-  * ``Twig_Test``
-  * ``Twig_Test_Function``
-  * ``Twig_Test_Method``
-  * ``Twig_Test_Node``
+Inheritance
+-----------
 
-* As of Twig 2.x, the ``Twig_SimpleTest`` class is deprecated and will be
-  removed in Twig 3.x (use ``Twig_Test`` instead). In Twig 2.x,
-  ``Twig_SimpleTest`` is just an alias for ``Twig_Test``.
+* Defining a "block" definition in a non-capturing block in a child template is
+  deprecated since Twig 2.5.0. In Twig 3.0, it will throw a
+  ``Twig\Error\SyntaxError`` exception. It does not work anyway, so most
+  projects won't need to do anything to upgrade.
+
+Errors
+------
+
+* Passing a string as the ``$source`` argument on ``\Twig\Error\Error`` /
+  ``Twig\Error\Error`` constructor is deprecated since Twig 2.6.1. Pass an
+  instance of ``Twig\Source`` instead.
+
+Tags
+----
+
+* The ``spaceless`` tag is deprecated in Twig 2.7. Use the ``spaceless`` filter
+  instead or ``{% apply spaceless %}`` (the ``Twig\Node\SpacelessNode`` and
+  ``Twig\TokenParser\SpacelessTokenParser`` classes are also deprecated).
+
+* Using the ``spaceless`` tag at the root level of a child template is
+  deprecated in Twig 2.5.0. This does not work as one would expect it to work
+  anyway. In Twig 3.0, it will throw a ``Twig\Error\SyntaxError`` exception.
+
+* The ``filter`` tag is deprecated in Twig 2.9. Use the ``apply`` tag instead
+  (the ``Twig\TokenParser\FilterTokenParser`` classes is also deprecated).
+
+* Adding an ``if`` condition on a ``for`` tag is deprecated in Twig 2.10. Use a
+  ``filter`` filter or an "if" condition inside the "for" body instead (if your condition
+  depends on a variable updated inside the loop).
+
+Final Classes
+-------------
+
+The following classes are marked as ``@final`` in Twig 2 and will be final in
+3.0:
+
+* ``Twig\Node\ModuleNode``
+* ``Twig\TwigFilter``
+* ``Twig\TwigFunction``
+* ``Twig\TwigTest``
+* ``Twig\Profiler\Profile``
+
+Parser
+------
+
+* As of Twig 2.7, the ``\Twig\Parser::isReservedMacroName()`` / ``Twig\Parser``
+  function is deprecated and will be removed in Twig 3.0. It always returns
+  ``false`` anyway as Twig 2 does not have any reserved macro names.
+
+Environment
+-----------
+
+* As of Twig 2.7, the ``base_template_class`` option on ``Twig\Environment`` is
+  deprecated and will be removed in Twig 3.0.
+
+* As of Twig 2.7, the ``Twig\Environment::getBaseTemplateClass()`` and
+  ``Twig\Environment::setBaseTemplateClass()`` methods are deprecated and will
+  be removed in Twig 3.0.
+
+* As of Twig 2.7, the ``Twig\Environment::getTemplateClass()`` is marked as
+  being internal and should not be used.
+
+* As of Twig 2.7, passing a ``Twig\Template`` instance to the
+  ``Twig\Environment::load()`` and ``Twig\Environment::resolveTemplate()`` is
+  deprecated.
+
+* Depending on the input, ``Twig\Environment::resolveTemplate()`` can return
+  a ``Twig\Template`` or a ``Twig\TemplateWrapper`` instance. In Twig 3.0, this
+  method will **always** return a ``Twig\TemplateWrapper`` instance. You should
+  only rely on the methods of this class if you want to be forward-compatible.
 
 Interfaces
 ----------
 
-* As of Twig 2.x, the following interfaces are deprecated and empty (they will
-  be removed in Twig 3.0):
+* As of Twig 2.7, the empty ``Twig\Loader\ExistsLoaderInterface`` interface is
+  deprecated and will be removed in Twig 3.0.
 
-* ``Twig_CompilerInterface``     (use ``Twig_Compiler`` instead)
-* ``Twig_LexerInterface``        (use ``Twig_Lexer`` instead)
-* ``Twig_NodeInterface``         (use ``Twig_Node`` instead)
-* ``Twig_ParserInterface``       (use ``Twig_Parser`` instead)
-* ``Twig_ExistsLoaderInterface`` (merged with ``Twig_LoaderInterface``)
-* ``Twig_TemplateInterface``     (use ``Twig_Template`` instead)
+* As of Twig 2.7, the ``Twig\Extension\InitRuntimeInterface`` interface is
+  deprecated and will be removed in Twig 3.0.
 
-Globals
--------
+Extensions
+----------
 
-* As of Twig 2.x, the ability to register a global variable after the runtime
-  or the extensions have been initialized is not possible anymore (but
-  changing the value of an already registered global is possible).
+* As of Twig 2.11, the ``Twig\Extension\CoreExtension::setEscaper()`` and
+  ``Twig\Extension\CoreExtension::getEscapers()`` are deprecated. Use the same
+  methods on ``Twig\Extension\EscaperExtension`` instead.
+
+Miscellaneous
+-------------
+
+* As of Twig 2.7, the ``Twig_SimpleFilter``, ``Twig_SimpleFunction``, and
+  ``Twig_SimpleTest`` empty classes are deprecated and will be removed in Twig
+  3.0. Use ``Twig\TwigFilter``, ``Twig\TwigFunction``, and ``Twig\TwigTest``
+  respectively.
+
+* As of Twig 2.8.2, all usage of
+  ``Twig\Loader\FilesystemLoader::findTemplate()`` check for a ``null`` return
+  value (same meaning as returning ``false``). If you are overidding
+  ``Twig\Loader\FilesystemLoader::findTemplate()``, you must return ``null`` instead of ``false``
+  to be compatible with Twig 3.0.

@@ -1,7 +1,5 @@
 <?php
 
-require_once(ROOT_DIR.'/vendor/autoload.php');
-
 class Helper {
 
   public static function loadConfig() {
@@ -47,40 +45,20 @@ class Helper {
     global $config;
 
     // Load the theme
-    // Twig_Autoloader::register();                     // Not needed for Twig v2.0 and up
-    // $loader = new Twig_Loader_Filesystem(THEMES_DIR . $config['theme']);
-    // $twig = new Twig_Environment($loader, $config['twig_config']);
-	  $loader = new \Twig\Loader\FilesystemLoader(THEMES_DIR . $config['theme']);
-    $twig = new \Twig\Environment($loader, $config['twig_config']);
-	
+    Twig_Autoloader::register();
+    $loader = new Twig_Loader_Filesystem(THEMES_DIR . $config['theme']);
+    $twig = new Twig_Environment($loader, $config['twig_config']);
     $twig->addExtension(new Twig_Extension_Debug());
-    $twig-> enableDebug();
-
     $base_url = $config['base_url'];
-    /*
     $thumbnail_function = new Twig_SimpleFunction('picturo_thumbnail', function ($path, $width, $height)  use($base_url) {
       $imgTag = "<img src='" . $base_url . "/thumbnail/" . $width . "x" . $height . "/" . $path ."' width='$width' height='$height'/>";
       echo $imgTag;
     });
-*/
-$thumbnail_function = new Twig_Function('picturo_thumbnail', function ($path, $width, $height)  use($base_url) {
-      $imgTag = "<img src='" . $base_url . "/thumbnail/" . $width . "x" . $height . "/" . $path ."' width='$width' height='$height'/>";
-      echo $imgTag;
-    });
-
     $twig->addFunction($thumbnail_function);
-    /*
     $download_function = new Twig_SimpleFunction('picturo_download', function ($path)  use($base_url,$config) {
       $imgTag = '<a href="' . $base_url . '/content/'. $path .'"><img src="'. $base_url  .'/themes/'. $config['theme'].'/img/download.png" alt="Télécharger l\'image" width="48" height="48"/></a>';
       echo $imgTag;
     });
-    */
-
-    $download_function = new Twig_Function('picturo_download', function ($path)  use($base_url,$config) {
-      $imgTag = '<a href="' . $base_url . '/content/'. $path .'"><img src="'. $base_url  .'/themes/'. $config['theme'].'/img/download.png" alt="Télécharger l\'image" width="48" height="48"/></a>';
-      echo $imgTag;
-    });
-
     $twig->addFunction($download_function);
     $twig_vars['view'] = $name;
     $twig_vars['base_url'] = $config['base_url'];

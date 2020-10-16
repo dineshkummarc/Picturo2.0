@@ -52,9 +52,6 @@ class Thumbnail {
    *  $balise="<img src='".auto_thumb('nom.jpg',139,139)."' alt='nom.jpg' class='lightbox'/>";
   */
 
-
-
-
   /**
    *   Génère automatiquement la miniatures de l'image passée en argument
    *   aux dimensions spécifiées ou par défaut (100px)

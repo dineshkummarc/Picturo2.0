@@ -35,6 +35,8 @@ $config['theme'] = 'yashanyket';			// Set the theme -> default / dineshkummarc /
 // $config['timezone'] = '';
 $config['date_format'] = 'jS M Y';
 $config['items_per_page'] = 25;              // defaults to 15 images per page
+
+// custom config
 $config['twigversion'] = 0;
 $config['phpversion'] = 0;
 

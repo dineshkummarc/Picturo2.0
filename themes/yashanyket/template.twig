@@ -18,8 +18,8 @@
 
             <ul class="nav">
                <li>Hello {{ username }} !</li>
-               {% if admin %}
                <li><a href="{{ base_url }}">Albums</a></li>
+               {% if admin %}
                <li><a href="{{ base_url }}/createUser">Manage users</a></li>
                <li><a href="{{ base_url }}/settings">Settings</a></li>
 			   {% endif %}
@@ -28,9 +28,18 @@
             </ul>
             {% endif %}
 
+            {% if username == "" %}
+            <ul class="nav">
+               <li>Hello Anonymous!</li>
+               <li><a href="{{ base_url }}">Albums</a></li>
+            </ul>
+            {% endif %}
+
+
          </div>
       </header>
       {% endif %}
+
       {% if view == "login" and admin %}
 
       <header class="header clearfix">

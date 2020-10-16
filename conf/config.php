@@ -26,10 +26,10 @@ $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_set
 
 */
 $config['site_title'] = 'Picturo 2.0';
-$config['private'] = true;
+$config['private'] = false;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['private_pass']['toto'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
-$config['nbOfFolders'] = 12;
+$config['nbOfFolders'] = 1;
 $config['theme'] = 'yashanyket';			// Set the theme -> default / dineshkummarc / jerrywham / yashanyket (defaults to "default")
 // $config['locale'] = '';
 // $config['timezone'] = '';

@@ -143,11 +143,17 @@ a:hover, a:active {
 .new form:before {
    border:0;
 }
-.error, .success {
+.error {
    font-size: 10px;
    padding: 10px;
    margin: 0 0 1em;
-   color: #FFF;
+   color: #ff0000;
+}
+.success {
+   font-size: 10px;
+   padding: 10px;
+   margin: 0 0 1em;
+   color: #2EAE9B;
 }
 .login input,
 .new input {

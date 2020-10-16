@@ -145,8 +145,8 @@ Help make Picturo2.0 better by checking out the GitHub repository and submitting
  - [ ] Support DDS (.dds)
  - [ ] Photo count for each Album
  - [ ] Changing Themes on the runtime by User
- - [ ] Mega Menu for Public session $config['private'] = false; i.e. Anonymous Users
- - [ ] Mega Menu for Private session $config['private'] = true; i.e. Registered Users
+ - [x] Mega Menu for Public session $config['private'] = false; i.e. Anonymous Users
+ - [x] Mega Menu for Private session $config['private'] = true; i.e. Registered Users
  - [x] Private Albums (Album under a blank Album)
  - [x] Better authentification method
  - [x] User Friendly Error Messages
@@ -166,7 +166,6 @@ Help make Picturo2.0 better by checking out the GitHub repository and submitting
  - [x] Update Vendor Directory for Bramus/router to use dev-master
  - [x] Update Vendor Directory for Twig to use v2.8.x
  - [x] Update Vendor Directory for Symphony to use dev-master
-</br>
 Optional:
  - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the Album
  - [x] Update Composer for external dependencies

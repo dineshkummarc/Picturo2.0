@@ -27,7 +27,10 @@ class Helper {
     }
 
     // Init sessions
-    session_start();
+    // session_start();
+    if($config['private'] === true) {
+      session_start();
+    }
 
     return $config;
   }

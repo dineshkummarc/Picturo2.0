@@ -2,7 +2,7 @@ Picturo 2.0
 ===========
 
 ## About the Application
-Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your Pictures and Albums in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
+Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your Pictures and Albums in the content to publish your pictures. Picturo2.0 is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
 
 ## Demo
 You can try Picturo2.0 at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
@@ -121,12 +121,12 @@ Thumbnail will be automagically created in a folder matching the size of the thu
 I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use [Twig template](https://twig.symfony.com/doc/3.x/templates.html#template-inheritance) for easy theming. And please, show me your theme if you want to share it.
 
 ### Contribute
-Help make Picturo2.0 better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
+Help make Picturo2.0 better by checking out the GitHub repository and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
 
 ## Developement Credit:-
-- [x] [Original Author](https://github.com/jbleuzen) of repo [Picturo](https://github.com/jbleuzen/Picturo)
-- [x] [Modification Author](https://github.com/jerrywham) of repo [Picturo](https://github.com/jerrywham/Picturo)
-- [ ] [Upgrade Author](https://github.com/dineshkummarc/Picturo) of repo [Picturo](https://github.com/dineshkummarc/Picturo)
+- [x] [Original Author](https://github.com/jbleuzen) for Repository [Picturo](https://github.com/jbleuzen/Picturo)
+- [x] [Modification Author](https://github.com/jerrywham) for Repository [Picturo](https://github.com/jerrywham/Picturo)
+- [ ] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
 
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
@@ -143,6 +143,9 @@ Help make Picturo2.0 better by checking out the GitHub repoistory and submitting
  - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif)
  - [ ] Support TGA (.tga, .vda, .vst, .icb)
  - [ ] Support DDS (.dds)
+ - [ ] Photo count for each Album
+ - [ ] Changing Themes on the run time by User
+ - [x] Private Albums (Album under a blank Album)
  - [x] Better authentification method
  - [x] User Friendly Error Messages
  - [x] User Friendly Language - English
@@ -161,5 +164,5 @@ Help make Picturo2.0 better by checking out the GitHub repoistory and submitting
  - [x] Update Vendor Directory for Bramus/router to use dev-master
  - [x] Update Vendor Directory for Twig to use v2.8.x
 </br>Optional: 
- - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the album
+ - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the Album
  - [x] Update Composer for external dependencies

@@ -26,7 +26,7 @@ $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_set
 
 */
 $config['site_title'] = 'Picturo 2.0';
-$config['private'] = false;
+$config['private'] = true;                  // To enable private session change this to 'true'
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['private_pass']['toto'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['nbOfFolders'] = 1;

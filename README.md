@@ -6,13 +6,13 @@ Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 
 
 ## Demo
 You can try Picturo2.0 at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
-Admin Account:
+### Admin Account:
 ~~~
 user : admin
 password : admin
 ~~~
 
-User Account:
+### User Account:
 ~~~
 user : toto
 password : admin
@@ -50,9 +50,9 @@ To run Picturo2.0 you will need <b>``PHP 7.1.3+``</b>, <b>``Twig 2.x (needs at l
 First download Picturo2.0 and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
 
 ## Test Server
-1. Apache/2.4.41
-2. ~~PHP 5.2.4~~ PHP/7.1.33
-3. ~~MySQL 5~~ MySQL/5.0.12-dev
+1. [Apache/2.4.41](https://httpd.apache.org/download.cgi)
+2. [~~PHP 5.2.4~~ PHP/7.1.33](https://www.php.net/releases/7_1_33.php)
+3. [~~MySQL 5~~ MySQL/5.0.12-dev](https://dev.mysql.com/downloads/mysql/)
 4. [GD Library](https://www.php.net/manual/en/book.image.php)
 
 ### Upload your folders of pictures into content.

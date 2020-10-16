@@ -261,7 +261,7 @@ class Picturo {
       # On vérifie qu'on a bien une image
       if(!isset($image_infos['mime'])) {
         $_SESSION['my_custom_image'] = '' ;
-        Helper::Error("Le fichier ".$image_path." n'existe pas ou n'est pas une image.");
+        Helper::Error("The ".$image_path." File either does not exist or is not an image.");
         Helper::redirect($retour);
         exit; 
       }
@@ -307,20 +307,20 @@ class Picturo {
 
           # Trop peu probable pour être honnète
           if(!$image->load($imgToModify)) {
-            Helper::Error("Le fichier ".$imgToModify." n'existe pas ou n'est pas une image.");
+            Helper::Error("The ".$imgToModify." does not exist or is not an image.");
             Helper::redirect($retour);
             exit();
           }
 
           # Transformation
           if(!$image->launchTransformation($t,$d,$w,$h,$x,$y)) {
-            Helper::Error("Erreur lors de la modification de l'image ");
+            Helper::Error("Error while modifying the image ");
             Helper::redirect($retour);
             exit;   
           }
           # Enregistrement
           elseif(!$image->save($imgToModify)) {
-            Helper::Error("Erreur lors de l'enregistrement de l'image ");
+            Helper::Error("Error saving image ");
             Helper::redirect($retour);
             exit;   
           } 
@@ -335,7 +335,7 @@ class Picturo {
             $controller->regen($imgToModify);
 
           # Redirection
-          Helper::Info("Modification et enregistrement de l'image");
+          Helper::Info("Editing and saving the image");
           Helper::redirect($retour);
           exit;   
         } 

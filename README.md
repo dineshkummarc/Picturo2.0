@@ -25,7 +25,7 @@ Login
 Login Fail
 ![login-fail.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/login-fail.png)
 
-Defult Admin
+Default Admin
 ![default-admin.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/default-admin.png)
 
 Albums
@@ -71,7 +71,7 @@ Passwords are SHA-1 strings, you can generate your passwords online here at [sha
 Your photos must be stored in content folder, if you want to add a gallery you just need to create a folder within your content folder. Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
-Picturo supports themes with [Twig](https://twig.symfony.com/) as templating engine they are located in the themes folder. All themes must include two files : <br/>
+Picturo2.0 supports themes with [Twig](https://twig.symfony.com/) as templating engine they are located in the themes folder. All themes must include two files : <br/>
 ~~~
 gallery.html
 detail.html
@@ -121,12 +121,12 @@ Thumbnail will be automagically created in a folder matching the size of the thu
 I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use [Twig template](https://twig.symfony.com/doc/3.x/templates.html#template-inheritance) for easy theming. And please, show me your theme if you want to share it.
 
 ### Contribute
-Help make Picturo better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
+Help make Picturo2.0 better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
 
-## Developers Credit:-
-- [ ] Creator -> https://github.com/jbleuzen
-- [ ] Modifications -> https://github.com/jerrywham
-- [ ] Modifications -> https://github.com/dineshkummarc
+## Developement Credit:-
+- [x] [Original Author](https://github.com/jbleuzen) of repo [Picturo](https://github.com/jbleuzen/Picturo)
+- [x] [Modification Author](https://github.com/jerrywham) of repo [Picturo](https://github.com/jerrywham/Picturo)
+- [ ] [Upgrade Author](https://github.com/dineshkummarc/Picturo) of repo [Picturo](https://github.com/dineshkummarc/Picturo)
 
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
@@ -160,6 +160,6 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Pictures and folders are sorting with natural case insensitive sort
  - [x] Update Vendor Directory for Bramus/router to use dev-master
  - [x] Update Vendor Directory for Twig to use v2.8.x
-Optional: 
+</br>Optional: 
  - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the album
- - [x] Update Composer
+ - [x] Update Composer for external dependencies

@@ -51,7 +51,7 @@ First download Picturo2.0 and extract it on your server. Change ownership and pe
 
 ## Test Server
 1. Apache/2.4.41
-2. ~~PHP 5.2.4~~ PHP/7.1.33 or greater
+2. ~~PHP 5.2.4~~ PHP/7.1.33
 3. ~~MySQL 5~~ MySQL/5.0.12-dev
 4. [GD Library](https://www.php.net/manual/en/book.image.php)
 
@@ -59,7 +59,7 @@ First download Picturo2.0 and extract it on your server. Change ownership and pe
 Customize settings by editing ``config.php`` in the root folder of Picturo. To override a setting simply uncomment it in ``config.php`` and set your custom value.
 
 ### Privatize your site
-Picturo can keep your galleries private, you just have to edit ``config.php`` and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
+Picturo2.0 can keep your galleries private, you just have to edit ``config.php`` and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
 ~~~
 $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
@@ -121,7 +121,7 @@ Thumbnail will be automagically created in a folder matching the size of the thu
 I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use [Twig template](https://twig.symfony.com/doc/3.x/templates.html#template-inheritance) for easy theming. And please, show me your theme if you want to share it.
 
 ### Contribute
-Help make Picturo2.0 better by checking out the GitHub repository and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
+Help make Picturo2.0 better by checking out the [GitHub repository](https://github.com/dineshkummarc/Picturo2.0) and submitting [pull requests](https://github.com/dineshkummarc/Picturo2.0/pulls). If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
 
 ## Developement Credit:-
 - [x] [Original Author](https://github.com/jbleuzen) for Repository [Picturo](https://github.com/jbleuzen/Picturo)

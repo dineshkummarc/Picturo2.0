@@ -6,13 +6,13 @@ Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 
 
 ## Demo
 You can try Picturo2.0 at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
-Admin Account:
+### Admin Account:
 ~~~
 user : admin
 password : admin
 ~~~
 
-User Account:
+### User Account:
 ~~~
 user : toto
 password : admin
@@ -50,16 +50,16 @@ To run Picturo2.0 you will need <b>``PHP 7.1.3+``</b>, <b>``Twig 2.x (needs at l
 First download Picturo2.0 and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
 
 ## Test Server
-1. Apache/2.4.41
-2. ~~PHP 5.2.4~~ PHP/7.1.33 or greater
-3. ~~MySQL 5~~ MySQL/5.0.12-dev
+1. [Apache/2.4.41](https://httpd.apache.org/download.cgi)
+2. [~~PHP 5.2.4~~ PHP/7.1.33](https://www.php.net/releases/7_1_33.php)
+3. [~~MySQL 5~~ MySQL/5.0.12-dev](https://dev.mysql.com/downloads/mysql/)
 4. [GD Library](https://www.php.net/manual/en/book.image.php)
 
 ### Upload your folders of pictures into content.
 Customize settings by editing ``config.php`` in the root folder of Picturo. To override a setting simply uncomment it in ``config.php`` and set your custom value.
 
 ### Privatize your site
-Picturo can keep your galleries private, you just have to edit ``config.php`` and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
+Picturo2.0 can keep your galleries private, you just have to edit ``config.php`` and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
 ~~~
 $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
@@ -121,7 +121,7 @@ Thumbnail will be automagically created in a folder matching the size of the thu
 I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use [Twig template](https://twig.symfony.com/doc/3.x/templates.html#template-inheritance) for easy theming. And please, show me your theme if you want to share it.
 
 ### Contribute
-Help make Picturo2.0 better by checking out the GitHub repository and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
+Help make Picturo2.0 better by checking out the [GitHub repository](https://github.com/dineshkummarc/Picturo2.0) and submitting [pull requests](https://github.com/dineshkummarc/Picturo2.0/pulls). If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
 
 ## Developement Credit:-
 - [x] [Original Author](https://github.com/jbleuzen) for Repository [Picturo](https://github.com/jbleuzen/Picturo)

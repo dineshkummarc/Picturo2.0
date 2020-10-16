@@ -1,5 +1,11 @@
 *** Picturo Changelog ***
 
+2020.10.16 - version 2.0.0
+* Translation for user friendly messages - English
+* Composer Update for Twig
+* Vendor dependency updated to Twig 2.8.x
+* Media Query for Resolutions for Desktop and Mobiles
+
 2014.06.26 - version 0.4.0
  * Better authentification method
  * Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)

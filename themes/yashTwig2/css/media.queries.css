@@ -1,0 +1,203 @@
+@media screen and (max-width:2048px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 1800px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1800px;
+}
+
+}
+
+@media screen and (max-width:1920px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 1687px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1687px;
+}
+
+}
+
+@media screen and (max-width:1600px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 1406px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1406px;
+}
+
+}
+
+@media screen and (max-width:1440px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 1265px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1265px;
+}
+
+}
+
+@media screen and (max-width:1366px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 1200px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1200px;
+}
+
+}
+
+@media screen and (max-width:1280px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 1125px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 1125px;
+}
+
+}
+
+@media screen and (max-width:1024px) {
+   .image-wrapper img {
+      position: relative;
+      border-bottom: 0;
+      max-width:100%;
+      box-sizing: border-box;
+      margin:auto;
+   }
+
+/* Structure Styles
+/*---------------------------------------------*/
+.inner {
+   width: 900px;                    /* 87.89% of the Screen width */
+   margin: 0 auto;
+}
+
+/* Gallery
+/*---------------------------------------------*/
+.detail {
+   max-width: 900px;
+}
+
+}
+
+/* Smaller tablet to small tablet: from 768px to 825px */
+@media only screen and (max-width: 825px) {
+
+    
+}
+
+
+/* Small phones to smaller tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    
+
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+
+    
+}
+
+
+/* For making App Store and Google play image of same size */
+@media only screen and (max-width: 385px) {
+
+
+}
+
+
+/* For making I'm hungry and Show me more button of same size */
+@media only screen and (max-width: 382px) {
+    
+
+    
+}

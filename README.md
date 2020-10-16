@@ -6,8 +6,15 @@ Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 
 
 ## Demo
 You can try Picturo2.0 at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
+Admin Account:
 ~~~
 user : admin
+password : admin
+~~~
+
+User Account:
+~~~
+user : toto
 password : admin
 ~~~
 
@@ -138,7 +145,7 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [ ] Support DDS (.dds)
  - [x] Better authentification method
  - [x] User Friendly Error Messages
- - [ ] User Friendly Language - English
+ - [x] User Friendly Language - English
  - [x] Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
  - [x] Add administrator status
  - [x] Add multiple users
@@ -151,8 +158,8 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Javascript preloader for big pictures
  - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)
  - [x] Pictures and folders are sorting with natural case insensitive sort
- - [ ] Update Vendor Directory for Bramus/router to use dev-master
- - [ ] Update Vendor Directory for Twig to use v2.8.x
+ - [x] Update Vendor Directory for Bramus/router to use dev-master
+ - [x] Update Vendor Directory for Twig to use v2.8.x
 Optional: 
  - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the album
- - [ ] Update Composer
+ - [x] Update Composer

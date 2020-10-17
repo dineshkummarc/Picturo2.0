@@ -1,0 +1,36 @@
+{% extends "template.twig" %}
+
+{% block title %}Error{% endblock %}
+
+{% block bodyClass %}gallery{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ theme_url }}/css/404.css" />
+<script src="{{ theme_url }}/js/jquery.min.js"></script>
+<script src="{{ theme_url }}/js/404-script.js"></script>
+
+{%if breadcrumb %}
+
+<ul class="breadcrumb">
+   {% for link,url in breadcrumb %}
+   <li>
+   {% if url %}
+   <a href="{{ url }}">{{ link }}</a></li>
+   {% else %}
+   {{ link }}
+   {% endif %}
+   {% endfor %}
+</ul>
+{% endif %}
+<div class="image-wrapper">
+   <div id="rocket"></div>
+
+<hgroup>
+    <h1>Page not Found</h1>
+    <h2>We couldn't find what you were looking for.</h2>
+</hgroup>
+   {% if error_msg %}<br/>{{ error_msg }}{% endif %}
+</div>
+
+{% endblock %}

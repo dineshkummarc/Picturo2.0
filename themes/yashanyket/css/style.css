@@ -80,7 +80,7 @@ a:hover, a:active {
 
 [role=footer] {
    display : table-row;
-   height: 100px;
+   height: 10px;
    text-align: left;
 }
 /* Misc Styles

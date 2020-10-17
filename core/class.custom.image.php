@@ -1,7 +1,7 @@
 <?php
 /*
 	Classe customImage
-	Charger, transformer et enregistrer une image
+	Charger, transformer et enregistrer une image (Load, transform and save an image)
 	Auteur : Thomas Morin
 */
 

@@ -1,21 +1,25 @@
 language: php
 
-php:
-  - 5.2
-  - 5.3
-  - 5.4
-  - 5.5
-  - hhvm
+sudo: false
 
-env:
-  - TWIG_EXT=no
-  - TWIG_EXT=yes
-
-before_script:
-  - if [ "$TWIG_EXT" == "yes" ]; then sh -c "cd ext/twig && phpize && ./configure --enable-twig && make && sudo make install"; fi
-  - if [ "$TWIG_EXT" == "yes" ]; then echo "extension=twig.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`; fi
+cache:
+    directories:
+        - vendor
+        - $HOME/.composer/cache/files
 
 matrix:
-  exclude:
-    - php: hhvm
-      env: TWIG_EXT=yes
+    include:
+        - php: 7.0
+        - php: 7.1
+        - php: 7.2
+        - php: 7.3
+    fast_finish: true
+
+before_install:
+    # turn off XDebug
+    - phpenv config-rm xdebug.ini || return 0
+
+install:
+    - travis_retry composer install
+
+script: ./vendor/bin/simple-phpunit

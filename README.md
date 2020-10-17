@@ -2,12 +2,19 @@ Picturo 2.0
 ===========
 
 ## About the Application
-Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your Pictures and Albums in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
+Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your Pictures and Albums in the content to publish your pictures. Picturo2.0 is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
 
 ## Demo
 You can try Picturo2.0 at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
+### Admin Account:
 ~~~
 user : admin
+password : admin
+~~~
+
+### User Account:
+~~~
+user : toto
 password : admin
 ~~~
 
@@ -18,7 +25,7 @@ Login
 Login Fail
 ![login-fail.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/login-fail.png)
 
-Defult Admin
+Default Admin
 ![default-admin.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/default-admin.png)
 
 Albums
@@ -37,22 +44,22 @@ Error View
 ![error.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/error.png)
 
 ## Requirements
-To run Picturo2.0 you will need <b>``PHP 7.1.3+``</b> Twig 2.x (needs at least PHP 7.1.3 to run) and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.
+To run Picturo2.0 you will need <b>``PHP 7.1.3+``</b>, <b>``Twig 2.x (needs at least PHP 7.1.3 to run)``</b> and <b>``GD Library``</b> on your server. If you’re running Apache you will also require <b>``mod_rewrite``</b> to be enabled.
 
 ## Installation
 First download Picturo2.0 and extract it on your server. Change ownership and permission of the cache folder to the user of your web server <b>``set permissions to 777``</b> so you’ll be able to delete cache if needed.
 
 ## Test Server
-1. Apache/2.4.41
-2. ~~PHP 5.2.4~~ PHP/7.1.33 or greater
-3. ~~MySQL 5~~ MySQL/5.0.12-dev
+1. [Apache/2.4.41](https://httpd.apache.org/download.cgi)
+2. [~~PHP 5.2.4~~ PHP/7.1.33](https://www.php.net/releases/7_1_33.php)
+3. [~~MySQL 5~~ MySQL/5.0.12-dev](https://dev.mysql.com/downloads/mysql/)
 4. [GD Library](https://www.php.net/manual/en/book.image.php)
 
 ### Upload your folders of pictures into content.
 Customize settings by editing ``config.php`` in the root folder of Picturo. To override a setting simply uncomment it in ``config.php`` and set your custom value.
 
 ### Privatize your site
-Picturo can keep your galleries private, you just have to edit ``config.php`` and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
+Picturo2.0 can keep your galleries private, you just have to edit ``config.php`` and set private variable to true and add a user. <b>``By default, there is an admin user with the password “admin” in the configuration file``</b>. Just uncomment the two following lines to enable private galleries : <br/>
 ~~~
 $config['private'] = true;
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
@@ -64,7 +71,7 @@ Passwords are SHA-1 strings, you can generate your passwords online here at [sha
 Your photos must be stored in content folder, if you want to add a gallery you just need to create a folder within your content folder. Galleries thumbnail are generated with the first picture found in the folder.
 
 ### Create your own theme
-Picturo supports themes with [Twig](https://twig.symfony.com/) as templating engine they are located in the themes folder. All themes must include two files : <br/>
+Picturo2.0 supports themes with [Twig](https://twig.symfony.com/) as templating engine they are located in the themes folder. All themes must include two files : <br/>
 ~~~
 gallery.html
 detail.html
@@ -114,12 +121,12 @@ Thumbnail will be automagically created in a folder matching the size of the thu
 I plan to release some others theme later, but if your want to create your own I recommend to check the default theme and use [Twig template](https://twig.symfony.com/doc/3.x/templates.html#template-inheritance) for easy theming. And please, show me your theme if you want to share it.
 
 ### Contribute
-Help make Picturo better by checking out the GitHub repoistory and submitting pull requests. If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
+Help make Picturo2.0 better by checking out the [GitHub repository](https://github.com/dineshkummarc/Picturo2.0) and submitting [pull requests](https://github.com/dineshkummarc/Picturo2.0/pulls). If you find a bug please report it on the [Issue page](https://github.com/dineshkummarc/Picturo2.0/issues).
 
-## Developers Credit:-
-- [ ] Creator -> https://github.com/jbleuzen
-- [ ] Modifications -> https://github.com/jerrywham
-- [ ] Modifications -> https://github.com/dineshkummarc
+## Developement Credit:-
+- [x] [Original Author](https://github.com/jbleuzen) for Repository [Picturo](https://github.com/jbleuzen/Picturo)
+- [x] [Modification Author](https://github.com/jerrywham) for Repository [Picturo](https://github.com/jerrywham/Picturo)
+- [ ] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
 
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
@@ -136,9 +143,14 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif)
  - [ ] Support TGA (.tga, .vda, .vst, .icb)
  - [ ] Support DDS (.dds)
+ - [ ] Photo count for each Album
+ - [ ] Changing Themes on the runtime by User
+ - [x] Mega Menu for Public session $config['private'] = false; i.e. Anonymous Users
+ - [x] Mega Menu for Private session $config['private'] = true; i.e. Registered Users
+ - [x] Private Albums (Album under a blank Album)
  - [x] Better authentification method
  - [x] User Friendly Error Messages
- - [ ] User Friendly Language - English
+ - [x] User Friendly Language - English
  - [x] Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
  - [x] Add administrator status
  - [x] Add multiple users
@@ -151,5 +163,9 @@ Help make Picturo better by checking out the GitHub repoistory and submitting pu
  - [x] Javascript preloader for big pictures
  - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)
  - [x] Pictures and folders are sorting with natural case insensitive sort
-Optional: 
- - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the album
+ - [x] Update Vendor Directory for Bramus/router to use dev-master
+ - [x] Update Vendor Directory for Twig to use v2.8.x
+ - [x] Update Vendor Directory for Symphony to use dev-master
+Optional:
+ - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the Album
+ - [x] Update Composer for external dependencies

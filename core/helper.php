@@ -27,7 +27,10 @@ class Helper {
     }
 
     // Init sessions
-    session_start();
+    // session_start();
+    if($config['private'] === true) {
+      session_start();
+    }
 
     return $config;
   }
@@ -43,7 +46,7 @@ class Helper {
     global $config;
 
     // Load the theme
-    Twig_Autoloader::register();
+    // Twig_Autoloader::register();
     $loader = new Twig_Loader_Filesystem(THEMES_DIR . $config['theme']);
     $twig = new Twig_Environment($loader, $config['twig_config']);
     $twig->addExtension(new Twig_Extension_Debug());

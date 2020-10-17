@@ -36,11 +36,11 @@ a:hover, a:active {
 
 /* Structure Styles
 /*---------------------------------------------*/
-/*
+
 .inner {
    width: 900px;
    margin: 0 auto;
-}*/
+}
 
 .header {
    background: #2EAE9B;
@@ -286,10 +286,9 @@ img {
 
 /* Gallery
 /*---------------------------------------------*/
-/*
 .detail {
    max-width: 900px;
-}*/
+}
 
 /* Gallery
 /*---------------------------------------------*/

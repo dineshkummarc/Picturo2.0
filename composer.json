@@ -11,14 +11,16 @@
       "name": "Cyril MAGUIRE",
       "homepage": "http://www.ecyseo.net",
       "role": "Developer"
+    },
+    {
+      "name": "DINESHKUMMARC",
+      "homepage": "https://github.com/dineshkummarc",
+      "role": "QA & Tester"
     }
   ],
   "license": "MIT",
-  "config": {
-    "preferred-install": "dist"
-  },
   "require": {
-    "twig/twig": "^2.8.*",
-    "bramus/router": "^1.4"
+    "twig/twig": "2.8.*",
+    "bramus/router": "dev-master"
   }
 }

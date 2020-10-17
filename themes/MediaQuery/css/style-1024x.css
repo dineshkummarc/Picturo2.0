@@ -1,5 +1,4 @@
 
-@media screen and (min-width: 961px) and (max-width: 1024px) {
     html, body {
        margin: 0; padding: 0;
        height: 100%;
@@ -438,4 +437,3 @@
        clear:both;
        padding-top:10px;
     }
-}

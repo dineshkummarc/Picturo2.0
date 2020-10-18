@@ -36,6 +36,7 @@ a:hover, a:active {
 
 /* Structure Styles
 /*---------------------------------------------*/
+
 .inner {
    width: 900px;
    margin: 0 auto;
@@ -442,13 +443,4 @@ img {
 #custom-image-help {
    clear:both;
    padding-top:10px;
-}
-@media screen and (max-width:1100px) {
-   .image-wrapper img {
-      position: relative;
-      border-bottom: 0;
-      max-width:100%;
-      box-sizing: border-box;
-      margin:auto;
-   }
 }

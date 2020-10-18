@@ -131,9 +131,11 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
  - [ ] Television Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)
- - [ ] Mobile Friendly theme (Support for Resolution 320x240, 480x853, 640x, 960x)
+ - [ ] Mobile Friendly theme (Support for Resolution 320x240, 480x853, 600x960, 800x1280, 900x1280)
+ - [x] Add Media Query based Stylesheet for Desktop, Tablet and Mobile Devices
  - [ ] Add settings -> Add Users, Manage Users
  - [ ] Add new Themes with new Designs
+ - [x] Modify Old Themes with new Modifications
  - [x] Support GIF (.gif)
  - [x] Support PNG (.png)
  - [ ] Support TIFF (.tiff, .tif)

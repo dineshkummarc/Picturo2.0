@@ -39,5 +39,4 @@ $config['items_per_page'] = 25;              // defaults to 15 images per page
 // custom config
 $config['twigversion'] = 0;
 $config['phpversion'] = 0;
-$config['MediaQuery'] = 1;                   // set as 1 to enable, else 0
 ?>

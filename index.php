@@ -1,56 +1,40 @@
-<?php
+<?php // @codingStandardsIgnoreFile
+/**
+ * This file is part of Pico. It's copyrighted by the contributors recorded
+ * in the version control history of the file, available from the following
+ * original location:
+ *
+ * <https://github.com/picocms/Pico/blob/master/index.php>
+ *
+ * SPDX-License-Identifier: MIT
+ * License-Filename: LICENSE
+ */
 
-include 'bootstrap.php';
+// load dependencies
+if (is_file(__DIR__ . '/vendor/autoload.php')) {
+    // composer root package
+    require_once(__DIR__ . '/vendor/autoload.php');
+} elseif (is_file(__DIR__ . '/../../../vendor/autoload.php')) {
+    // composer dependency package
+    require_once(__DIR__ . '/../../../vendor/autoload.php');
+} else {
+    die(
+        "Cannot find 'vendor/autoload.php'. If you're using a composer-based Pico install, run `composer install`. "
+        . "If you're rather trying to use one of Pico's pre-built release packages, make sure to download Pico's "
+        . "latest release package named 'pico-release-v*.tar.gz' (don't download a source code package)."
+    );
+}
 
+// instance Pico
+$pico = new Pico(
+    __DIR__,    // root dir
+    'config/',  // config dir
+    'plugins/', // plugins dir
+    'themes/'   // themes dir
+);
 
-Helper::loadConfig();
+// override configuration?
+//$pico->setConfig(array());
 
-
-// Routing
-$router = new \Bramus\Router\Router();
-
-$router->before('GET|POST', '/.*', function() {
-  global $config;
-
-  if ($config['private'] == true && !isset($_SESSION['username']) && ! preg_match("@/login@", $_SERVER["REQUEST_URI"])) {
-    Helper::redirect('/login');
-  }
-});
-
-$router->get('/login', function() {
-  $controller = new Auth();
-  $controller->login();
-});
-
-$router->post('/login', function() {
-  $controller = new Auth();
-  $controller->authenticate();
-});
-
-$router->get('/logout', function() {
-  $controller = new Auth();
-  $controller->logout();
-});
-
-$router->get('/thumbnail/(\d+)x(\d+)/(.*)', function($width, $height, $path) {
-  $controller = new Thumbnail($width, $height, $path);
-  $controller->serve();
-});
-
-$router->get('/(.*)\.(.*)$', function($path, $extension) {
-  $controller = new Picturo();
-  $controller->displayPicture($path, $extension);
-});
-
-$router->get('/(.*)/page([0-9]*)', function($path, $page = 1) {
-  $controller = new Picturo();
-  $controller->displayFolder($path, $page);
-});
-
-$router->get('/(.*)', function($path) {
-  $controller = new Picturo();
-  $controller->displayFolder($path, 1);
-});
-
-$router->run();
-
+// run application
+echo $pico->run();

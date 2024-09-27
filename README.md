@@ -128,6 +128,9 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 - [x] [Modification Author](https://github.com/jerrywham) for Repository [Picturo](https://github.com/jerrywham/Picturo)
 - [ ] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
 
+### v0.1
+ - [ ] 
+
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
  - [ ] Television Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)

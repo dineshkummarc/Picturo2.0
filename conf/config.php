@@ -26,7 +26,7 @@ $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_set
 
 */
 $config['site_title'] = 'Picturo 2.0';
-$config['base_url'] = 'http://localhost/Picturo2.0'; 				// Override base URL (e.g. http://example.com)
+$config['base_url'] = 'http://localhost/Picturo2.0'; 				// Override base URL (e.g. http://example.com), no slash at end.
 $config['private'] = true;                  // To enable private session change this to 'true' else 'false'
 $config['admin_pass']['admin'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
 $config['private_pass']['toto'] = 'sha512:1000:2Gp+SOuwkWQpMsemFvMyxfPtEfY/M77l:GrHLycEBPATCSmFCmd4onEynvfSoNR3Q';
@@ -37,7 +37,7 @@ $config['theme'] = 'jerrywham';			// Set the theme -> default / dineshkummarc / 
 $config['date_format'] = 'jS M Y';
 $config['items_per_page'] = 25;              // defaults to 15 images per page
 $config['twig_config'] = array(			// Twig settings
-	'cache' => 'base_url'.'/conf/',  	// To enable Twig caching change this to CACHE_DIR
+	'cache' => 'base_url'.'/conf/',  	// To enable Twig caching change this to CACHE_DIR i.e. 'base_url'.'/conf/' else false
 	'autoescape' => true,				// Autoescape Twig vars
 	'debug' => true			            // Enable Twig debug
 );

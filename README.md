@@ -124,7 +124,7 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ## 2013-05-07 Pico Release V0.6.2
 - [x] [Changed] Replaced glob_recursive with get_files
 ```
-Picturo2.0 is heavily inspired by https://github.com/picocms/Pico, but it’s for Photos and Albums.
+Picturo is heavily inspired by https://github.com/picocms/Pico, but it’s for Photos and Albums.
 ```
 
 ## 2013.09.01 - v0.0.1

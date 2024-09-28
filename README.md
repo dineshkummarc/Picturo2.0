@@ -124,7 +124,13 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ### v0.1
  - []
 
-2014.06.26 - version 0.4.0
+## 2013.11.08 - v0.3.0
+ * Better composer configration
+ * Refactoring : Creating basic controllers
+ * Updating default configuration
+ * Bugfix on default theme
+
+## 2014.06.26 - v0.4.0
  * Better authentification method
  * Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
  * Add administrator status

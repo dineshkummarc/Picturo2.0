@@ -141,3 +141,17 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
  - [x] Update Vendor Directory for Symphony to use dev-master
 Optional:
  - [x] Update Composer for external dependencies
+ 
+## v2.1
+ - [ ] Support Other BMP Types (.dib, .rle)
+ - [ ] Television Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)
+ - [ ] Mobile Friendly theme (Support for Resolution 480x853, 600x960, 800x1280, 900x1280)
+ - [ ] Add settings -> Add Users, Manage Users
+ - [ ] Add new Themes with new Designs
+ - [ ] Support TIFF (.tiff, .tif)
+ - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif)
+ - [ ] Support TGA (.tga, .vda, .vst, .icb)
+ - [ ] Support DDS (.dds)
+ - [ ] Photo count for each Album
+ - [ ] Changing Themes on the runtime by User
+ - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the Album

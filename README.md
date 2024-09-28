@@ -119,28 +119,17 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ## Developement Credit:-
 - [x] [Original Author](https://github.com/jbleuzen) for Repository [Picturo](https://github.com/jbleuzen/Picturo)
 - [x] [Modification Author](https://github.com/jerrywham) for Repository [Picturo](https://github.com/jerrywham/Picturo)
-- [ ] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
+- [] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
 
 ### v0.1
- - [ ] 
+ - [] 
 
 ## TODO:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
- - [ ] Television Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)
- - [ ] Mobile Friendly theme (Support for Resolution 480x853, 600x960, 800x1280, 900x1280)
- - [ ] Add settings -> Add Users, Manage Users
- - [ ] Add new Themes with new Designs
  - [x] Support GIF (.gif)
  - [x] Support PNG (.png)
- - [ ] Support TIFF (.tiff, .tif)
  - [x] Support BMP (.bmp)
- - [ ] Support Other BMP Types (.dib, .rle)
  - [x] Support JPEG (.jpeg, .jpg)
- - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif)
- - [ ] Support TGA (.tga, .vda, .vst, .icb)
- - [ ] Support DDS (.dds)
- - [ ] Photo count for each Album
- - [ ] Changing Themes on the runtime by User
  - [x] Mega Menu for Public session $config['private'] = false; i.e. Anonymous Users
  - [x] Mega Menu for Private session $config['private'] = true; i.e. Registered Users
  - [x] Private Albums (Album under a blank Album)
@@ -162,6 +151,18 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
  - [x] Update Vendor Directory for Bramus/router to use dev-master
  - [x] Update Vendor Directory for Twig to use v2.8.x
  - [x] Update Vendor Directory for Symphony to use dev-master
+ - [ ] Support Other BMP Types (.dib, .rle)
+ - [ ] Television Friendly theme (Support for Resolution 1440x900, 1600x1200, 1920x1080, 1920x1200)
+ - [ ] Mobile Friendly theme (Support for Resolution 480x853, 600x960, 800x1280, 900x1280)
+ - [ ] Add settings -> Add Users, Manage Users
+ - [ ] Add new Themes with new Designs
+ - [ ] Support TIFF (.tiff, .tif)
+ - [ ] Support Other JPEG Types (.jpe, .jfif, .jfi, .jif)
+ - [ ] Support TGA (.tga, .vda, .vst, .icb)
+ - [ ] Support DDS (.dds)
+ - [ ] Photo count for each Album
+ - [ ] Changing Themes on the runtime by User
+
 Optional:
  - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the Album
  - [x] Update Composer for external dependencies

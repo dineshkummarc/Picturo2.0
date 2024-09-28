@@ -124,6 +124,9 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ### v0.1
  - []
 
+## 2013.09.21 - v0.2.0
+ * Adding a thumbnail service
+
 ## 2013.11.08 - v0.3.0
  * Better composer configration
  * Refactoring : Creating basic controllers

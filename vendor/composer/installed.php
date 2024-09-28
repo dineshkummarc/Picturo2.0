@@ -3,7 +3,7 @@
         'name' => 'jbleuzen/picturo',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '110dc70bf46ab55326f53b235a8f3a5d8f929664',
+        'reference' => 'c819b27e5686757bd3c7a6d2418428086a7bfaad',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -24,7 +24,7 @@
         'jbleuzen/picturo' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '110dc70bf46ab55326f53b235a8f3a5d8f929664',
+            'reference' => 'c819b27e5686757bd3c7a6d2418428086a7bfaad',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

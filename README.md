@@ -44,7 +44,7 @@ First download Picturo2.0 and extract it on your server. Change ownership and pe
 
 ## Test Server
 1. [~Apache/2.4.41~ Apache/2.4.59](https://httpd.apache.org/download.cgi)
-3. [~~PHP 5.2.4~~ ~PHP/7.1.33~ PHP/7.1.33](https://www.php.net/releases/7_4_33.php)
+3. [~~PHP 5.2.4~~ ~PHP/7.1.33~ PHP/7.4.33](https://www.php.net/releases/7_4_33.php)
 4. [~~MySQL 5~~ ~MySQL/5.0.12-dev~ MySQL/8.3.0](https://dev.mysql.com/downloads/mysql/)
 5. [GD Library](https://www.php.net/manual/en/book.image.php)
 

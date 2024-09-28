@@ -139,10 +139,10 @@ Picturo2.0 is heavily inspired by https://github.com/picocms/Pico, but it’s fo
 - [x] Adding a thumbnail service
 
 ## 2013.11.08 - v0.3.0
- * Better composer configration
- * Refactoring : Creating basic controllers
- * Updating default configuration
- * Bugfix on default theme
+- [x] Better composer configration
+- [x] Refactoring : Creating basic controllers
+- [x] Updating default configuration
+- [x] Bugfix on default theme
 
 ## 2014.06.26 - v0.4.0
  * Better authentification method

@@ -2,7 +2,7 @@ Picturo 2.0
 ===========
 
 ## About the Application
-Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your Pictures and Albums in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/gilbitron/Pico), but it’s for Photos and Albums.
+Built on top of [Picturo](https://github.com/dineshkummarc/Picturo), Picturo2.0 is a stupidly simple, blazing fast, flat file photo cum Album gallery running. No admin, you just need to drop your Pictures and Albums in the content to publish your pictures. Picturo is heavily inspired by [Pico](https://github.com/picocms/Pico), but it’s for Photos and Albums.
 
 ## Demo
 You can try Picturo2.0 at [Demo](http://picturomobile.infinityfreeapp.com/), actually the demo is private but you can login with the following credentials : <br/>
@@ -128,7 +128,7 @@ Picturo2.0 is heavily inspired by https://github.com/picocms/Pico, but it’s fo
 ```
 
 ## 2013.09.01 - v0.0.1
- * Initial release
+- [x] Initial release
 
 ## 2013.09.19 - v0.1.0
  * Refactoring : Using a new router

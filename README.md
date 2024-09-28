@@ -136,7 +136,7 @@ Picturo2.0 is heavily inspired by https://github.com/picocms/Pico, but it’s fo
 - [x] Fixing bugs
 
 ## 2013.09.21 - v0.2.0
- * Adding a thumbnail service
+- [x] Adding a thumbnail service
 
 ## 2013.11.08 - v0.3.0
  * Better composer configration

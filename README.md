@@ -139,7 +139,6 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
  - [x] Update Vendor Directory for Bramus/router to use dev-master
  - [x] Update Vendor Directory for Twig to use v2.8.x
  - [x] Update Vendor Directory for Symphony to use dev-master
-Optional:
  - [x] Update Composer for external dependencies
  
 ## v2.1

@@ -121,8 +121,8 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 - [x] [Modification Author](https://github.com/jerrywham) for Repository [Picturo](https://github.com/jerrywham/Picturo)
 - [] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
 
-### v0.1
- - []
+## 2013.09.01 - v0.0.1
+ * Initial release
 
 ## 2013.09.19 - v0.1.0
  * Refactoring : Using a new router

@@ -119,7 +119,7 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ## Developement Credit:-
 - [x] [Original Author](https://github.com/jbleuzen) for Repository [Picturo](https://github.com/jbleuzen/Picturo)
 - [x] [Modification Author](https://github.com/jerrywham) for Repository [Picturo](https://github.com/jerrywham/Picturo)
-- [] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
+- [x] [Upgrade Author](https://github.com/dineshkummarc/Picturo) for Repository [Picturo](https://github.com/dineshkummarc/Picturo)
 
 ## Pico Release V0.6.2
 Released: 2013-05-07

@@ -124,13 +124,13 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ### v0.1
  - [] 
  
-## 2020.10.16 - version 2.0.0
+## 2020.10.16 - v2.0.0
 * Translation for user friendly messages - English
 * Composer Update for Twig
 * Vendor dependency updated to Twig 2.8.x
 * Media Query for Resolutions for Desktop and Mobiles
 
-## v2.1:
+## 2020.10.17 - v2.1:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
  - [x] Support GIF (.gif)
  - [x] Support PNG (.png)

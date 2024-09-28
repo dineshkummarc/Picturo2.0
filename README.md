@@ -124,7 +124,7 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
 ### v0.1
  - [] 
 
-## TODO:
+## v2.0:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)
  - [x] Support GIF (.gif)
  - [x] Support PNG (.png)
@@ -133,21 +133,9 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
  - [x] Mega Menu for Public session $config['private'] = false; i.e. Anonymous Users
  - [x] Mega Menu for Private session $config['private'] = true; i.e. Registered Users
  - [x] Private Albums (Album under a blank Album)
- - [x] Better authentification method
  - [x] User Friendly Error Messages
  - [x] User Friendly Language - English
- - [x] Add ban functions to avoid spam (writen by Seb Sauvage at sebsauvage.net)
- - [x] Add administrator status
- - [x] Add multiple users
- - [x] Add possibility to hide folders to users via administration. By default, a new folder is available for all users.
- - [x] Administrator can manage pictures (rotate, cropped, cut, reduce, setWidth, setHeight). Modifications are made on thumbnails. Originals are not modified.
- - [x] Add error view
  - [x] Added a new design for error view
- - [x] Updated Default theme (footer is always at the bottom of the page -not bottom of the screen- whatever the height of content)
- - [x] Pictures (originals) can be download one by one by users
- - [x] Javascript preloader for big pictures
- - [x] generate method of thumbnail replace by auto_thumb method (writen by Bronco at warriordudimanche.net)
- - [x] Pictures and folders are sorting with natural case insensitive sort
  - [x] Update Vendor Directory for Bramus/router to use dev-master
  - [x] Update Vendor Directory for Twig to use v2.8.x
  - [x] Update Vendor Directory for Symphony to use dev-master
@@ -162,7 +150,6 @@ Help make Picturo2.0 better by checking out the [GitHub repository](https://gith
  - [ ] Support DDS (.dds)
  - [ ] Photo count for each Album
  - [ ] Changing Themes on the runtime by User
-
 Optional:
  - [ ] Convert all of the image types to a single image source (.jpeg/.png) while viewing on the Album
  - [x] Update Composer for external dependencies

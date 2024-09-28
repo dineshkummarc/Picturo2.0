@@ -131,9 +131,9 @@ Picturo2.0 is heavily inspired by https://github.com/picocms/Pico, but it’s fo
 - [x] Initial release
 
 ## 2013.09.19 - v0.1.0
- * Refactoring : Using a new router
- * Cleaning some urls
- * Fixing bugs
+- [x] Refactoring : Using a new router
+- [x] Cleaning some urls
+- [x] Fixing bugs
 
 ## 2013.09.21 - v0.2.0
  * Adding a thumbnail service

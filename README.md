@@ -159,10 +159,10 @@ Picturo2.0 is heavily inspired by https://github.com/picocms/Pico, but it’s fo
 - [x] pictures and folders are sorting with natural case insensitive sort
  
 ## 2020.10.16 - v2.0.0
-* Translation for user friendly messages - English
-* Composer Update for Twig
-* Vendor dependency updated to Twig 2.8.x
-* Media Query for Resolutions for Desktop and Mobiles
+- [x] Translation for user friendly messages - English
+- [x] Composer Update for Twig
+- [x] Vendor dependency updated to Twig 2.8.x
+- [x] Media Query for Resolutions for Desktop and Mobiles
 
 ## 2020.10.17 - v2.1:
  - [x] Desktop Friendly theme (Support for Resolution 1024×600, 1024×768, 1280x600, 1280x800, 1280x960, 1280x1024, 1366x768)

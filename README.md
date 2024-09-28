@@ -21,25 +21,18 @@ password : admin
 ### Screenshots
 Login
 ![login.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/login.png)
-
 Login Fail
 ![login-fail.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/login-fail.png)
-
 Default Admin
 ![default-admin.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/default-admin.png)
-
 Albums
 ![Albums.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/Albums.png)
-
 Albums+Photos
 ![album-photos.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/album-photos.png)
-
 Album View
 ![album-view.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/album-view.png)
-
 Photo View
 ![photo.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/photo.png)
-
 Error View
 ![error.png](https://github.com/dineshkummarc/picturo2.0/blob/main/screenshots/error.png)
 
